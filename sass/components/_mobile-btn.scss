@@ -1,4 +1,6 @@
 .mobile-btn {
+  margin-left: auto;
+  z-index: 3;
   &__icon-close {
     display: none;
   }
@@ -7,7 +9,6 @@
   &:focus &__icon-menu {
     fill: #2196f3;
   }
-  margin-left: auto;
   @media screen and (min-width: $breakpointTablet) {
     display: none;
   }
