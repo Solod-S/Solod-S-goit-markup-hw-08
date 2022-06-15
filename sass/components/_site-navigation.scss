@@ -1,43 +1,96 @@
 header {
-  padding-top: 25px;
-  padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  @media screen and (min-width: $breakpointTablet) {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+  @media screen and (min-width: $breakpointDesktop) {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
 }
 
 .navigation {
+  position: relative;
   display: flex;
   align-items: center;
-  padding: 0;
+
+  &__menu-wrapper {
+    display: none;
+    @media screen and (min-width: $breakpointTablet) {
+      display: flex;
+    }
+    @media screen and (min-width: $breakpointDesktop) {
+      display: contents;
+    }
+  }
   &__menu {
-    display: flex;
-    align-items: center;
-    padding: 0;
+    @media screen and (min-width: $breakpointDesktop) {
+      display: flex;
+      align-items: center;
+      padding: 0;
+    }
   }
   &__list {
     display: flex;
-    align-items: center;
+    @media screen and (max-width: $breakpointBeeforeTablet) {
+      flex-direction: column;
+      margin-bottom: 302px;
+    }
+    @media screen and (min-width: $breakpointDesktop) {
+      display: flex;
+      align-items: center;
+    }
   }
   &__item {
-    position: relative;
-    @include marginRightNotLastCh('50px');
+    @media screen and (max-width: $breakpointBeeforeTablet) {
+      @include marginBottomNotLastCh(32px);
+    }
+    @media screen and (min-width: $breakpointDesktop) {
+      position: relative;
+      @include marginRightNotLastCh('50px');
+    }
   }
   &__link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: $primaryTitleColor;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     @include hoverLink();
     @include focusLink();
-    padding: 30px 0;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.1;
-    letter-spacing: 0.02em;
-    color: $primaryTextColor;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: $breakpointDesktop) {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.1;
+      letter-spacing: 0.02em;
+      color: $primaryTextColor;
+
+      padding: 30px 0;
+    }
   }
   &__icon {
     fill: currentColor;
-    margin-right: 10px;
+    @media screen and (min-width: $breakpointDesktop) {
+      margin-right: 10px;
+    }
   }
 }
-
+.navigation__menu-wrapper.--is-open {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: $primaryWhiteColor;
+  width: 100vh;
+  height: 100vh;
+}
 .navigation__link--slider {
   &::after {
     content: '';
@@ -59,19 +112,22 @@ header {
 
 .navigation__contact-list {
   display: flex;
+  flex-direction: column;
   margin-left: auto;
 }
 
 .navigation__link--current-page-status {
-  color: $primaryAccentColor;
-  &::after {
-    position: absolute;
-    bottom: -28px;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    transform: scalex(1);
-    background: $primaryAccentColor;
-    border-radius: 2px;
+  @media screen and (min-width: $breakpointDesktop) {
+    color: $primaryAccentColor;
+    &::after {
+      position: absolute;
+      bottom: -28px;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      transform: scalex(1);
+      background: $primaryAccentColor;
+      border-radius: 2px;
+    }
   }
 }
