@@ -1,22 +1,47 @@
 .clients {
   &__title {
-    margin-bottom: 50px;
     color: $primaryTitleColor;
     font-weight: 700;
-    font-size: 36px;
     line-height: 42px;
     text-align: center;
     letter-spacing: 0.03em;
-    // }
+
+    @media screen and (max-width: $breakpointBeeforeTablet) {
+      margin-bottom: 20px;
+      font-size: 28px;
+    }
+    @media screen and (min-width: $breakpointTablet) {
+      margin-bottom: 50px;
+      font-size: 36px;
+    }
   }
   &__list {
     display: flex;
-    padding: 0;
+    @media screen and (max-width: $breakpointBeeforeTablet) {
+      flex-wrap: wrap;
+      flex-basis: calc(100% / 2 - 30px);
+      margin-top: -30px;
+      margin-left: -30px;
+    }
+    @media screen and (max-width: $breakpointBeeforeDesktop) {
+    }
   }
   &__item {
-    @include marginRightNotLastCh();
+    @media screen and (max-width: $breakpointBeeforeTablet) {
+      margin-left: 30px;
+      margin-top: 30px;
+    }
+    @media screen and (max-width: $breakpointBeeforeDesktop) {
+    }
+    @media screen and (min-width: $breakpointTablet) {
+      @include marginRightNotLastCh();
+    }
   }
   &__link {
+    @media screen and (max-width: $breakpointBeeforeTablet) {
+      width: 210px;
+      height: 92px;
+    }
     position: relative;
     display: flex;
     justify-content: center;
