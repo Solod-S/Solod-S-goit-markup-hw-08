@@ -1,29 +1,53 @@
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  max-width: 1920px;
-  margin: 0 auto;
-  text-align: center;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/hero.jpg);
-  content: '';
-  background-size: cover;
+  @media screen and (max-width: $breakpointBeeforeTablet) {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    margin: 0 auto;
+    text-align: center;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero-mobile.jpg);
+    content: '';
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  @media screen and (min-width: $breakpointDesktop) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero.jpg);
+    content: '';
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1920px;
+  }
+
   &__title {
-    margin-bottom: 30px;
+    @media screen and (max-width: $breakpointBeeforeTablet) {
+      margin-bottom: 30px;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 25px;
+      line-height: 1.6;
 
-    color: $primaryWhiteColor;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
 
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.4;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
+      color: $primaryWhiteColor;
+    }
+    @media screen and (min-width: $breakpointDesktop) {
+      font-size: 44px;
+      line-height: 1.4;
+    }
   }
   &__button {
     @extend %button;
+    @media screen and (max-width: $breakpointBeeforeTablet) {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
     @include hoverBtn();
     @include focusBtn();
-    padding-left: 32px;
-    padding-right: 32px;
+    @media screen and (min-width: $breakpointDesktop) {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
   }
 }
