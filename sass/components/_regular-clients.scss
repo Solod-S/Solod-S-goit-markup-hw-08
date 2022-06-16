@@ -64,10 +64,26 @@
   &__link:focus {
     transform: translatex(-100%) rotateY(180deg);
     fill: $primaryAccentColor;
-    width: 170px;
+    width: 150px;
     height: 92px;
     border: 1px solid $primaryAccentColor;
     border-radius: 4px;
+    @media screen and (min-width: $breakpointTell) {
+      transform: translatex(-100%) rotateY(180deg);
+      fill: $primaryAccentColor;
+      width: 210px;
+      height: 92px;
+      border: 1px solid $primaryAccentColor;
+      border-radius: 4px;
+    }
+    @media screen and (min-width: $breakpointDesktop) {
+      transform: translatex(-100%) rotateY(180deg);
+      fill: $primaryAccentColor;
+      width: 170px;
+      height: 92px;
+      border: 1px solid $primaryAccentColor;
+      border-radius: 4px;
+    }
   }
   &__icon {
     position: absolute;
