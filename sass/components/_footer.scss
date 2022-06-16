@@ -1,11 +1,16 @@
 .footer {
   background-color: $secondaryBgColor;
-  max-width: 1920px;
+  @media screen and (max-width: $breakpointBeeforeTablet) {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
   @media screen and (min-width: $breakpointDesktop) {
     margin: 0 auto;
     font-style: normal;
     padding-top: 60px;
     padding-bottom: 60px;
+    max-width: 1920px;
   }
   &__wrapper {
     @media screen and (min-width: $breakpointDesktop) {
@@ -13,12 +18,30 @@
       align-items: baseline;
     }
   }
+  &__contacts-wrapper {
+    @media screen and (max-width: $breakpointBeeforeTablet) {
+      margin-bottom: 60px;
+    }
+  }
   &__social-wrapper {
+    @media screen and (max-width: $breakpointBeeforeTablet) {
+      margin-bottom: 60px;
+    }
     @media screen and (min-width: $breakpointDesktop) {
       margin-left: 70px;
     }
   }
   &__social-title {
+    @media screen and (max-width: $breakpointBeeforeTablet) {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: calc(16 / 14);
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+
+      color: $primaryWhiteColor;
+      margin-bottom: 20px;
+    }
     @media screen and (min-width: $breakpointDesktop) {
       margin-bottom: 20px;
 
@@ -32,6 +55,11 @@
     }
   }
   &--social-modificator {
+    @media screen and (max-width: $breakpointBeeforeTablet) {
+      background-color: rgba(255, 255, 255, 0.1);
+      fill: $primaryWhiteColor;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
     @media screen and (min-width: $breakpointDesktop) {
       background-color: rgba(255, 255, 255, 0.1);
       fill: $primaryWhiteColor;
@@ -46,21 +74,28 @@
 }
 
 .logo--footer-modificator {
-  @media screen and (min-width: $breakpointDesktop) {
+  @media screen and (max-width: $breakpointBeeforeTablet) {
+    margin-bottom: 20px;
     display: block;
     color: $primaryBgColor;
+  }
+  @media screen and (min-width: $breakpointDesktop) {
     margin-bottom: 20px;
     margin-right: 0px;
+    display: block;
+    color: $primaryBgColor;
   }
 }
 
 .address {
-  @media screen and (min-width: $breakpointDesktop) {
+  @media screen and (max-width: $breakpointBeeforeTablet) {
     font-style: normal;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
+    color: $primaryBgColor;
   }
+
   &__street {
     @media screen and (min-width: $breakpointDesktop) {
       display: inline-block;
@@ -76,6 +111,9 @@
   &__link {
     @include hoverLink();
     @include focusLink();
+    @media screen and (max-width: $breakpointBeeforeTablet) {
+      color: rgba(255, 255, 255, 0.6);
+    }
     @media screen and (min-width: $breakpointDesktop) {
       display: inline-block;
       color: rgba(255, 255, 255, 0.6);
