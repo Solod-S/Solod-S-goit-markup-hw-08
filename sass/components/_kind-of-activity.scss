@@ -1,4 +1,7 @@
 .characteristic {
+  @media screen and (max-width: $breakpointBeeforeTablet) {
+    display: none;
+  }
   display: flex;
   &__title {
     font-weight: 700;

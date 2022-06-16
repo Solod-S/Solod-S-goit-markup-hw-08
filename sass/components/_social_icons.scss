@@ -1,22 +1,28 @@
 .social {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  &__item {
-    @include marginRightNotLastCh(10px);
-  }
-  &__link {
-    @include hoverSocial;
+  @media screen and (min-width: $breakpointDesktop) {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $primaryWhiteColor;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    fill: $thrdBgColor;
-    padding: 0;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__item {
+    @media screen and (min-width: $breakpointDesktop) {
+      @include marginRightNotLastCh(10px);
+    }
+  }
+  &__link {
+    @media screen and (min-width: $breakpointDesktop) {
+      @include hoverSocial;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $primaryWhiteColor;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      fill: $thrdBgColor;
+      padding: 0;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
   }
 }

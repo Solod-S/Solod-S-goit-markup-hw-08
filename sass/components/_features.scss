@@ -1,33 +1,59 @@
 .features {
-  padding-top: 94px;
-  &__list {
-    display: flex;
+  @media screen and (max-width: $breakpointBeeforeTablet) {
+    padding-top: 60px;
   }
+  @media screen and (min-width: $breakpointDesktop) {
+    padding-top: 94px;
+    &__list {
+      display: flex;
+    }
+  }
+  // &__list {
+  //   @media screen and (max-width: $breakpointBeeforeTablet) {
+  //   }
+  // }
   &__wrapper {
-    background-color: $primaryBgColor;
-    display: flex;
-    height: 120px;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
+    @media screen and (max-width: $breakpointBeeforeTablet) {
+      background-color: $primaryBgColor;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 30px;
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+    @media screen and (min-width: $breakpointDesktop) {
+      height: 120px;
+    }
   }
   &__item {
-    width: 270px;
-    @include marginRightNotLastCh(30px);
+    @media screen and (max-width: $breakpointBeeforeTablet) {
+      @include marginBottomNotLastCh(30px);
+    }
+    @media screen and (min-width: $breakpointDesktop) {
+      width: 270px;
+    }
   }
   &__title {
-    margin-bottom: 10px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.1;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-
-    margin-bottom: 10px;
+    @media screen and (max-width: $breakpointBeeforeTablet) {
+      margin-bottom: 10px;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.1;
+      letter-spacing: 0.03em;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    @media screen and (min-width: $breakpointDesktop) {
+    }
   }
   &__description {
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
+    @media screen and (max-width: $breakpointBeeforeTablet) {
+      font-size: 14px;
+      line-height: 1.7;
+      letter-spacing: 0.03em;
+    }
+    @media screen and (min-width: $breakpointDesktop) {
+    }
   }
 }

@@ -4,76 +4,114 @@
 // }
 
 .team {
-  background-color: #f5f4fa;
-  max-width: 1920px;
-  margin: 0 auto;
+  background-color: $primaryBgColor;
+  @media screen and (min-width: $breakpointTablet) {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
   &__title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.03em;
+
+    @media screen and (min-width: $breakpointTablet) {
+      margin-bottom: 50px;
+      font-size: 36px;
+      letter-spacing: 0.03em;
+    }
   }
   &__member-list {
-    display: flex;
+    @media screen and (min-width: $breakpointTablet) {
+      display: flex;
+    }
   }
   &__member-item {
     @include hovershadow;
     @include focusshadow;
-    @include marginRightNotLastCh();
+    background-color: $primaryWhiteColor;
+
+    border-radius: 0px 0px 4px 4px;
+    @media screen and (max-width: $breakpointBeeforeTablet) {
+      width: 450px;
+      @include marginBottomNotLastCh(30px);
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    }
+    @media screen and (min-width: $breakpointTablet) {
+      @include marginRightNotLastCh();
+      width: 270px;
+      cursor: pointer;
+    }
     &:hover .avatar__img--base,
     &:hover .avatar::after {
-      position: absolute;
-      top: 0;
-      left: 0;
-      transform: scale(1.2) rotate(11deg);
-      display: block;
-      opacity: 1;
+      @media screen and (min-width: $breakpointTablet) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: scale(1.2) rotate(11deg);
+        display: block;
+        opacity: 1;
+      }
     }
-    width: 270px;
-    cursor: pointer;
-    background-color: $primaryWhiteColor;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0), 0px 4px 4px rgba(0, 0, 0, 0),
-      1px 4px 6px rgba(0, 0, 0, 0);
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 .avatar {
-  position: relative;
-  overflow: hidden;
+  @media screen and (min-width: $breakpointTablet) {
+    position: relative;
+    overflow: hidden;
+  }
   &__img {
-    display: block;
+    @media screen and (max-width: $breakpointBeeforeDesktop) {
+      width: 450px;
+    }
+    @media screen and (min-width: $breakpointTablet) {
+      display: block;
+    }
   }
   &__img--base {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: scale(1) rotate(0deg);
-    display: block;
-    background-color: rgba(47, 48, 58, 0.4);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (max-width: $breakpointBeeforeDesktop) {
+      display: none;
+    }
+    @media screen and (min-width: $breakpointTablet) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: scale(1) rotate(0deg);
+      display: block;
+      background-color: rgba(47, 48, 58, 0.4);
+      transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
   }
 }
 
 .avatar::after {
-  position: absolute;
-  content: '';
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(47, 48, 58, 0.2);
-  opacity: 0;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: $breakpointTablet) {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(47, 48, 58, 0.2);
+    opacity: 0;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .dscr {
-  padding-bottom: 30px;
-  padding-top: 30px;
+  @media screen and (max-width: $breakpointBeeforeDesktop) {
+    padding-bottom: 24px;
+    padding-top: 30px;
+  }
+  @media screen and (min-width: $breakpointDesktop) {
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
   &__name {
     margin-bottom: 10px;
-
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
