@@ -1,14 +1,22 @@
 .mobile-btn {
   margin-left: auto;
   z-index: 3;
+
   &__icon-close {
     display: none;
+    fill: $primaryTitleColor;
   }
-
+  &__icon-menu {
+    fill: $primaryTitleColor;
+    transition: fill 2520ms liner;
+  }
   &:hover &__icon-menu,
-  &:focus &__icon-menu {
+  &:focus &__icon-menu,
+  &:hover &__icon-close,
+  &:focus &__icon-close {
     fill: #2196f3;
   }
+
   @media screen and (min-width: $breakpointTablet) {
     display: none;
   }

@@ -17,42 +17,94 @@
     <!-- Шапка Header -->
     <header>
       <div class="navigation container">
-        <nav class="navigation__menu">
-          <a class="logo" href="./index.html"><span class="logo--pre-color">Web</span>Studio</a>
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a class="navigation__link navigation__link--slider" href="./index.html">Студия</a>
-            </li>
-            <li class="navigation__item navigation__item--current-page-status">
-              <a
-                class="navigation__link navigation__link--slider navigation__link--current-page-status"
-                href="./portfolio.html"
-                >Портфолио</a
+        <a class="logo" href="./index.html"><span class="logo--pre-color">Web</span>Studio</a>
+        <button class="mobile-btn" type="button" aria-expanded="false" data-menu-button>
+          <svg class="mobile-btn__svg" width="40px" height="40px" aria-label="menu">
+            <use
+              class="mobile-btn__icon-close"
+              href="./images/symbol-defs.svg#icon-mobile-close"
+            ></use>
+            <use
+              class="mobile-btn__icon-menu"
+              href="./images/symbol-defs.svg#icon-mobile-menu"
+            ></use>
+          </svg>
+        </button>
+        <div class="navigation__menu-wrapper" data-menu>
+          <nav class="navigation__menu">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a class="navigation__link navigation__link--slider" href="./index.html">Студия</a>
+              </li>
+              <li class="navigation__item navigation__item--current-page-status">
+                <a
+                  class="navigation__link navigation__link--current-page-status navigation__link--slider"
+                  href="./portfolio.html"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link navigation__link--slider" href="">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="navigation__contact-list">
+            <li class="navigation__item-contacts">
+              <a class="navigation__link-contacts" href="mailto:info@devstudio.com">
+                <svg class="navigation__icon" width="16px" height="12px" aria-label="Почта">
+                  <use href="./images/symbol-defs.svg#icon-mailto"></use>
+                </svg>
+                info@devstudio.com</a
               >
             </li>
-            <li class="navigation__item">
-              <a class="navigation__link navigation__link--slider" href="">Контакты</a>
+            <li class="navigation__item-contacts">
+              <a class="navigation__link-contacts --mobile-modificator" href="tel:+380961111111">
+                <svg class="navigation__icon" width="10px" height="16px" aria-label="Телефон">
+                  <use href="./images/symbol-defs.svg#icon-tellto"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
             </li>
           </ul>
-        </nav>
-        <ul class="navigation__contact-list">
-          <li class="navigation__item">
-            <a class="navigation__link navigation__link--contact" href="mailto:info@devstudio.com">
-              <svg class="navigation__icon" width="16px" height="12px" aria-label="Почта">
-                <use href="./images/symbol-defs.svg#icon-mailto"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link navigation__link--contact" href="tel:+380961111111">
-              <svg class="navigation__icon" width="10px" height="16px" aria-label="Телефон">
-                <use href="./images/symbol-defs.svg#icon-tellto"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+          <ul class="social-mobile">
+            <li class="social-mobile__item">
+              <a
+                class="social-mobile__link"
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                >Instagram</a
+              >
+            </li>
+            <li class="social-mobile__item">
+              <a
+                class="social-mobile__link"
+                href="https://twitter.com/?lang=ru"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                >Twitter</a
+              >
+            </li>
+            <li class="social-mobile__item">
+              <a
+                class="social-mobile__link"
+                href="https://www.facebook.com//"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                >Facebook</a
+              >
+            </li>
+            <li class="social-mobile__item">
+              <a
+                class="social-mobile__link"
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -371,5 +423,6 @@
         </div>
       </div>
     </footer>
+    <script src="./javascript/menu.js"></script>
   </body>
 </html>
