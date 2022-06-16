@@ -6,11 +6,11 @@
     text-align: center;
     letter-spacing: 0.03em;
 
-    @media screen and (max-width: $breakpointBeeforeTablet) {
-      margin-bottom: 20px;
+    @media screen and (max-width: $breakpointBeeforeDesktop) {
+      margin-bottom: 30px;
       font-size: 28px;
     }
-    @media screen and (min-width: $breakpointTablet) {
+    @media screen and (min-width: $breakpointBeeforeDesktop) {
       margin-bottom: 50px;
       font-size: 36px;
     }
@@ -38,10 +38,8 @@
     }
   }
   &__link {
-    @media screen and (max-width: $breakpointBeeforeTablet) {
-      width: 210px;
-      height: 92px;
-    }
+    width: 155px;
+    height: 92px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -50,12 +48,17 @@
     transform-origin: center right;
     transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1),
       border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    width: 170px;
-    height: 92px;
     border: 1px solid $thrdBgColor;
     border-radius: 4px;
     fill: $thrdBgColor;
+    @media screen and (min-width: $breakpointTell) {
+      width: 210px;
+      height: 92px;
+    }
+    @media screen and (min-width: $breakpointDesktop) {
+      width: 170px;
+      height: 92px;
+    }
   }
   &__link:hover,
   &__link:focus {

@@ -1,64 +1,86 @@
 .footer {
   background-color: $secondaryBgColor;
   max-width: 1920px;
-  margin: 0 auto;
-  font-style: normal;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  @media screen and (min-width: $breakpointDesktop) {
+    margin: 0 auto;
+    font-style: normal;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
   &__wrapper {
-    display: flex;
-    align-items: baseline;
+    @media screen and (min-width: $breakpointDesktop) {
+      display: flex;
+      align-items: baseline;
+    }
   }
   &__social-wrapper {
-    margin-left: 70px;
+    @media screen and (min-width: $breakpointDesktop) {
+      margin-left: 70px;
+    }
   }
   &__social-title {
-    margin-bottom: 20px;
+    @media screen and (min-width: $breakpointDesktop) {
+      margin-bottom: 20px;
 
-    font-weight: 700;
-    font-size: 14px;
-    line-height: calc(16 / 14);
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: calc(16 / 14);
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
 
-    color: $primaryWhiteColor;
+      color: $primaryWhiteColor;
+    }
   }
   &--social-modificator {
-    background-color: rgba(255, 255, 255, 0.1);
-    fill: $primaryWhiteColor;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (min-width: $breakpointDesktop) {
+      background-color: rgba(255, 255, 255, 0.1);
+      fill: $primaryWhiteColor;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
   }
   &__subscribe-wrapper {
-    margin-left: 93px;
+    @media screen and (min-width: $breakpointDesktop) {
+      margin-left: 93px;
+    }
   }
 }
 
 .logo--footer-modificator {
-  display: block;
-  color: $primaryBgColor;
-  margin-bottom: 20px;
-  margin-right: 0px;
+  @media screen and (min-width: $breakpointDesktop) {
+    display: block;
+    color: $primaryBgColor;
+    margin-bottom: 20px;
+    margin-right: 0px;
+  }
 }
 
 .address {
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
+  @media screen and (min-width: $breakpointDesktop) {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+  }
   &__street {
-    display: inline-block;
-    margin-bottom: 20px;
-    color: $primaryBgColor;
+    @media screen and (min-width: $breakpointDesktop) {
+      display: inline-block;
+      margin-bottom: 20px;
+      color: $primaryBgColor;
+    }
   }
   &__contact-item {
-    @include marginBottomNotLastCh();
+    @media screen and (min-width: $breakpointDesktop) {
+      @include marginBottomNotLastCh();
+    }
   }
   &__link {
     @include hoverLink();
     @include focusLink();
-    display: inline-block;
-    color: rgba(255, 255, 255, 0.6);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (min-width: $breakpointDesktop) {
+      display: inline-block;
+      color: rgba(255, 255, 255, 0.6);
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
   }
 }
 
