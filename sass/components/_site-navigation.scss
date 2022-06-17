@@ -23,11 +23,12 @@ header {
     @media screen and (max-width: $breakpointBeeforeTell) {
       padding: 48px 20px;
     }
-    @media screen and (min-width: $breakpointtell) {
+    @media screen and (max-width: $breakpointBeeforeTablet) {
       padding: 48px 40px;
     }
     @media screen and (min-width: $breakpointTablet) {
       display: flex;
+      align-items: center;
     }
     @media screen and (min-width: $breakpointDesktop) {
       display: contents;
@@ -49,6 +50,9 @@ header {
     @media screen and (max-width: $breakpointBeeforeTablet) {
       flex-direction: column;
     }
+    @media screen and (min-width: $breakpointTablet) {
+      margin-left: 88px;
+    }
     @media screen and (min-width: $breakpointDesktop) {
       display: flex;
       align-items: center;
@@ -58,60 +62,111 @@ header {
     @media screen and (max-width: $breakpointBeeforeTablet) {
       @include marginBottomNotLastCh(32px);
     }
-    @media screen and (min-width: $breakpointDesktop) {
+    @media screen and (min-width: $breakpointTablet) {
       position: relative;
       @include marginRightNotLastCh('50px');
     }
   }
 
   &__link {
+    @include hoverLink();
+    @include focusLink();
     font-weight: 500;
-    font-size: 40px;
+    line-height: 1.1;
     line-height: 47px;
     text-align: center;
     letter-spacing: 0.02em;
     color: $primaryTitleColor;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    @include hoverLink();
-    @include focusLink();
-
+    @media screen and (max-width: $breakpointBeeforeTell) {
+      font-size: 40px;
+    }
+    @media screen and (max-width: $breakpointBeeforeTablet) {
+      font-size: 40px;
+    }
+    @media screen and (min-width: $breakpointTablet) {
+      font-size: 14px;
+    }
     @media screen and (min-width: $breakpointDesktop) {
       font-size: 14px;
-      line-height: 1.1;
-
       padding: 30px 0;
+    }
+  }
+  &__contact-list {
+    display: flex;
+    @media screen and (max-width: $breakpointBeeforeTablet) {
+      flex-direction: column;
+      margin-bottom: 64px;
+    }
+    @media screen and (min-width: $breakpointTablet) {
+      margin-left: auto;
+      flex-direction: column;
+      margin-left: 82px;
+    }
+    @media screen and (min-width: $breakpointDesktop) {
+      margin-left: auto;
+    }
+  }
+  &__item-contacts {
+    @media screen and (max-width: $breakpointBeeforeTablet) {
+      @include marginBottomNotLastCh(32px);
+    }
+    @media screen and (min-width: $breakpointTablet) {
+      @include marginBottomNotLastCh(10px);
+    }
+    @media screen and (min-width: $breakpointDesktop) {
+      position: relative;
+      @include marginRightNotLastCh('50px');
     }
   }
   &__link-contacts {
     font-weight: 500;
-    font-size: 34px;
-    line-height: 47px;
+    line-height: 1.1;
     letter-spacing: 0.02em;
     color: $primaryTitleColor;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
     @include hoverLink();
     @include focusLink();
 
+    @media screen and (max-width: $breakpointBeeforeTell) {
+      font-size: 34px;
+    }
+    @media screen and (max-width: $breakpointBeeforeTablet) {
+      font-size: 34px;
+    }
+    @media screen and (min-width: $breakpointTablet) {
+      font-size: 12px;
+      color: $primaryTextColor;
+    }
     @media screen and (min-width: $breakpointDesktop) {
       font-size: 14px;
-      line-height: 1.1;
-      letter-spacing: 0.02em;
       color: $primaryTextColor;
-
       padding: 30px 0;
     }
   }
   &__link-contacts.--mobile-modificator {
-    color: $primaryAccentColor;
+    @media screen and (max-width: $breakpointBeeforeTablet) {
+      color: $primaryAccentColor;
+    }
   }
   &__icon {
     @media screen and (max-width: $breakpointBeeforeTablet) {
       display: none;
       fill: $primaryBlackColor;
     }
-    @media screen and (max-width: $breakpointDesktop) {
+    @media screen and (min-width: $breakpointTablet) {
+      &--tablet-mail {
+        width: 14px;
+        height: 10px;
+      }
+      &--tablet-tell {
+        width: 10px;
+        height: 14px;
+      }
+      margin-right: 8px;
+    }
+    @media screen and (min-width: $breakpointDesktop) {
       margin-right: 10px;
     }
   }
@@ -123,6 +178,7 @@ header {
     display: flex;
     flex-direction: column;
     position: fixed;
+    z-index: 1;
     top: 0;
     left: 0;
     background-color: $primaryWhiteColor;
@@ -135,11 +191,26 @@ header {
   }
 
   .navigation__link--slider {
+    @media screen and (min-width: $breakpointTablet) {
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -21px;
+        left: 0;
+        transform: scaleX(0);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        width: 100%;
+        height: 4px;
+
+        background: $primaryAccentColor;
+        border-radius: 2px;
+      }
+    }
     @media screen and (min-width: $breakpointDesktop) {
       &::after {
         content: '';
         position: absolute;
-        bottom: -28px;
+        bottom: -26px;
         left: 0;
         transform: scaleX(0);
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -155,33 +226,24 @@ header {
     }
   }
 
-  .navigation__contact-list {
-    @media screen and (max-width: $breakpointBeeforeDesktop) {
-      display: flex;
-      flex-direction: column-reverse;
-      margin-bottom: 64px;
-    }
-    @media screen and (min-width: $breakpointDesktop) {
-      display: flex;
-      margin-left: auto;
-    }
-  }
-  &__item-contacts {
-    @media screen and (max-width: $breakpointBeeforeTablet) {
-      @include marginBottomNotLastCh(32px);
-    }
-    @media screen and (min-width: $breakpointDesktop) {
-      position: relative;
-      @include marginRightNotLastCh('50px');
-    }
-  }
-
   .navigation__link--current-page-status {
     color: $primaryAccentColor;
+    @media screen and (min-width: $breakpointTablet) {
+      &::after {
+        position: absolute;
+        bottom: -21px;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        transform: scalex(1);
+        background: $primaryAccentColor;
+        border-radius: 2px;
+      }
+    }
     @media screen and (min-width: $breakpointDesktop) {
       &::after {
         position: absolute;
-        bottom: -28px;
+        bottom: -26px;
         left: 0;
         width: 100%;
         height: 4px;
