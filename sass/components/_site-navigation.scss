@@ -18,7 +18,10 @@ header {
 
   &__menu-wrapper {
     display: none;
-    @media screen and (max-width: $breakpointBeeforeTablet) {
+    @media screen and (max-width: $breakpointBeeforeTell) {
+      padding: 48px 20px;
+    }
+    @media screen and (min-width: $breakpointTell) {
       padding: 48px 40px;
     }
     @media screen and (min-width: $breakpointTablet) {

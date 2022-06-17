@@ -10,6 +10,17 @@
   }
 }
 // -----------------------------hover/focus/active---------------------------------
+@mixin hoverOutline($color: $primaryAccentColor) {
+  &:hover {
+    outline: 1px solid #{$color};
+  }
+}
+@mixin focusOutline($color: $primaryAccentColor) {
+  &:focus {
+    outline: 1px solid #{$color};
+  }
+}
+
 @mixin hoverLink($color: $primaryAccentColor, $fill: $primaryAccentColor) {
   &:hover {
     color: #{$color};
