@@ -2,7 +2,7 @@
   @media screen and (max-width: $breakpointBeeforeTablet) {
     padding-top: 60px;
   }
-  @media screen and (max-width: $breakpointTablet) {
+  @media screen and (min-width: $breakpointTablet) {
     padding-top: 60px;
   }
   @media screen and (min-width: $breakpointDesktop) {
@@ -21,7 +21,7 @@
     }
   }
   &__list {
-    @media screen and (max-width: $breakpointTablet) {
+    @media screen and (min-width: $breakpointTablet) {
       display: flex;
       flex-wrap: wrap;
       flex-basis: calc(100% / 2 - 30px);
