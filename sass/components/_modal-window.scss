@@ -74,12 +74,11 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
+  }
+  &__form-field:hover input,
+  &__form-field:focus input {
     @include hoverForm();
     @include focusForm();
-  }
-  &__form-field:hover input {
-    border-color: $primaryAccentColor;
-    fill: $primaryAccentColor;
   }
   &__wrapper {
     position: relative;
@@ -107,11 +106,12 @@
     width: 100%;
     cursor: pointer;
     border: 1px solid rgba(33, 33, 33, 0.2);
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border-radius: 4px;
   }
 
-  &__input:focus + &__input-icon {
+  &__input:focus + &__input-icon,
+  &__input:hover + &__input-icon {
     fill: $primaryAccentColor;
   }
   &__textarea-field {
@@ -120,12 +120,10 @@
     margin-bottom: 10px;
     margin-bottom: 20px;
   }
-  &__textarea-field:hover &__textarea {
-    border-color: $primaryAccentColor;
-    fill: $primaryAccentColor;
-  }
 
   &__textarea {
+    @include hoverForm();
+    @include focusForm();
     padding: 12px 16px;
     width: 100%;
     height: 120px;
@@ -133,7 +131,7 @@
     resize: none;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   &__textarea-label {
     margin-bottom: 4px;

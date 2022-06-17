@@ -47,16 +47,16 @@
     fill: $primaryAccentColor;
   }
 }
-@mixin hoverForm($color: $primaryAccentColor, $fill: $primaryAccentColor) {
+@mixin hoverForm($fill: $primaryAccentColor, $outline: $primaryAccentColor) {
   &:hover {
-    border-color: #{$color};
     fill: #{$fill};
+    outline: 1px solid #{$outline};
   }
 }
-@mixin focusForm($color: $primaryAccentColor, $fill: $primaryAccentColor) {
+@mixin focusForm($fill: $primaryAccentColor, $outline: $primaryAccentColor) {
   &:focus {
-    border-color: #{$color};
     fill: #{$fill};
+    outline: 1px solid #{$outline};
   }
 }
 @mixin hovershadow($plug: none) {
