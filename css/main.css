@@ -928,6 +928,20 @@ header {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    margin: 0 auto;
+    text-align: center;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-mobile.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mobile.jpg);
+    content: '';
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .hero {
     background-size: cover;
@@ -940,38 +954,32 @@ header {
   }
 }
 
+.hero__title {
+  margin-bottom: 30px;
+  font-style: normal;
+  font-weight: 900;
+  text-align: center;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
 @media screen and (max-width: 767px) {
   .hero__title {
-    margin-bottom: 30px;
-    font-style: normal;
-    font-weight: 900;
     font-size: 25px;
-    line-height: 1.4;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: #ffffff;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero__title {
+    font-size: 26px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero__title {
-    margin-bottom: 30px;
-    font-style: normal;
-    font-weight: 900;
     font-size: 44px;
-    text-align: center;
-    line-height: 1.4;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: #ffffff;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .hero__button {
-    padding-left: 10px;
-    padding-right: 10px;
   }
 }
 
@@ -987,11 +995,22 @@ header {
   fill: #2196f3;
 }
 
+@media screen and (max-width: 767px) {
+  .hero__button {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero__button {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .hero__button {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
     padding-left: 32px;
     padding-right: 32px;
   }

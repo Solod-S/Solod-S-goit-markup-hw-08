@@ -12,6 +12,17 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
+  @media screen and (min-width: $breakpointTablet) {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    margin: 0 auto;
+    text-align: center;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero-mobile.jpg);
+    content: '';
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
   @media screen and (min-width: $breakpointDesktop) {
     background-size: cover;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -24,42 +35,37 @@
   }
 
   &__title {
+    margin-bottom: 30px;
+    font-style: normal;
+    font-weight: 900;
+    text-align: center;
+    line-height: 1.4;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $primaryWhiteColor;
     @media screen and (max-width: $breakpointBeeforeTablet) {
-      margin-bottom: 30px;
-      font-style: normal;
-      font-weight: 900;
       font-size: 25px;
-      line-height: 1.4;
-      text-align: center;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-
-      color: $primaryWhiteColor;
+    }
+    @media screen and (max-width: $breakpointTablet) {
+      font-size: 26px;
     }
     @media screen and (min-width: $breakpointDesktop) {
-      margin-bottom: 30px;
-      font-style: normal;
-      font-weight: 900;
       font-size: 44px;
-      text-align: center;
-      line-height: 1.4;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      color: $primaryWhiteColor;
     }
   }
   &__button {
     @extend %button;
+    @include hoverBtn();
+    @include focusBtn();
     @media screen and (max-width: $breakpointBeeforeTablet) {
       padding-left: 10px;
       padding-right: 10px;
     }
-    @include hoverBtn();
-    @include focusBtn();
+    @media screen and (min-width: $breakpointTablet) {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
     @media screen and (min-width: $breakpointDesktop) {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
       padding-left: 32px;
       padding-right: 32px;
     }
