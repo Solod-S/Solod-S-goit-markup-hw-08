@@ -1,7 +1,10 @@
 header {
-  padding-top: 10px;
-  padding-bottom: 10px;
   border-bottom: 1px solid #ececec;
+  @media screen and (max-width: $breakpointBeeforeTablet) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
   @media screen and (min-width: $breakpointTablet) {
     padding-top: 21px;
     padding-bottom: 21px;
@@ -15,13 +18,12 @@ header {
 .navigation {
   display: flex;
   align-items: center;
-
   &__menu-wrapper {
     display: none;
     @media screen and (max-width: $breakpointBeeforeTell) {
       padding: 48px 20px;
     }
-    @media screen and (min-width: $breakpointTell) {
+    @media screen and (min-width: $breakpointtell) {
       padding: 48px 40px;
     }
     @media screen and (min-width: $breakpointTablet) {
