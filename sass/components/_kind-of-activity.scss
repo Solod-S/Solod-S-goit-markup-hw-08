@@ -1,5 +1,5 @@
 .characteristic {
-  @media screen and (max-width: $breakpointBeeforeTablet) {
+  @media screen and (max-width: $breakpointBeeforeDesktop) {
     display: none;
   }
   display: flex;

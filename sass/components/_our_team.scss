@@ -26,13 +26,17 @@
   &__member-list {
     @media screen and (min-width: $breakpointTablet) {
       display: flex;
+      flex-wrap: wrap;
+      flex-basis: calc(100% / 2 - 30px);
+      margin-top: -30px;
+      margin-right: -30px;
     }
   }
   &__member-item {
     @include hovershadow;
     @include focusshadow;
     background-color: $primaryWhiteColor;
-
+    cursor: pointer;
     border-radius: 0px 0px 4px 4px;
     @media screen and (max-width: $breakpointBeeforeTablet) {
       max-width: 450px;
@@ -41,9 +45,13 @@
         0px 2px 1px rgba(0, 0, 0, 0.2);
     }
     @media screen and (min-width: $breakpointTablet) {
+      margin-top: 30px;
+      margin-right: 30px;
+      width: 354px;
+    }
+    @media screen and (min-width: $breakpointDesktop) {
       @include marginRightNotLastCh();
       width: 270px;
-      cursor: pointer;
     }
     &:hover .avatar__img--base,
     &:hover .avatar::after {
@@ -72,10 +80,8 @@
     }
   }
   &__img--base {
-    @media screen and (max-width: $breakpointBeeforeDesktop) {
-      display: none;
-    }
     @media screen and (min-width: $breakpointTablet) {
+      width: 100%;
       position: absolute;
       top: 0;
       left: 0;
@@ -83,6 +89,9 @@
       display: block;
       background-color: rgba(47, 48, 58, 0.4);
       transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    @media screen and (max-width: $breakpointBeeforeDesktop) {
+      display: none;
     }
   }
 }

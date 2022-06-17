@@ -1125,7 +1125,7 @@ header {
   display: flex;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .characteristic {
     display: none;
   }
@@ -1220,11 +1220,18 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-preferred-size: calc(100% / 2 - 30px);
+        flex-basis: calc(100% / 2 - 30px);
+    margin-top: -30px;
+    margin-right: -30px;
   }
 }
 
 .team__member-item {
   background-color: #ffffff;
+  cursor: pointer;
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -1253,8 +1260,15 @@ header {
 
 @media screen and (min-width: 768px) {
   .team__member-item {
+    margin-top: 30px;
+    margin-right: 30px;
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__member-item {
     width: 270px;
-    cursor: pointer;
   }
   .team__member-item:not(:last-child) {
     margin-right: 30px;
@@ -1293,14 +1307,9 @@ header {
   }
 }
 
-@media screen and (max-width: 1199px) {
-  .avatar__img--base {
-    display: none;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .avatar__img--base {
+    width: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -1312,6 +1321,12 @@ header {
     transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .avatar__img--base {
+    display: none;
   }
 }
 
