@@ -21,7 +21,7 @@ header {
   &__menu-wrapper {
     display: none;
     @media screen and (max-width: $breakpointBeeforeTell) {
-      padding: 48px 20px;
+      // padding: 48px 20px;
     }
     @media screen and (max-width: $breakpointBeeforeTablet) {
       padding: 48px 40px;
@@ -73,7 +73,6 @@ header {
     @include focusLink();
     font-weight: 500;
     line-height: 1.1;
-    line-height: 47px;
     text-align: center;
     letter-spacing: 0.02em;
     color: $primaryTitleColor;
@@ -106,13 +105,15 @@ header {
     }
     @media screen and (min-width: $breakpointDesktop) {
       margin-left: auto;
+      flex-direction: row;
+      align-items: center;
     }
   }
   &__item-contacts {
     @media screen and (max-width: $breakpointBeeforeTablet) {
       @include marginBottomNotLastCh(32px);
     }
-    @media screen and (min-width: $breakpointTablet) {
+    @media screen and (min-width: $breakpointTablet) and (max-width: $breakpointBeeforeDesktop) {
       @include marginBottomNotLastCh(10px);
     }
     @media screen and (min-width: $breakpointDesktop) {
