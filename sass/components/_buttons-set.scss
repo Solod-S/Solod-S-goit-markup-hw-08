@@ -1,9 +1,20 @@
 .buttons-set {
   display: flex;
+  @media screen and (max-width: $breakpointBeeforeTablet) {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-basis: calc(100% / 3 - 16px);
+    margin-right: -8px;
+    margin-top: -8px;
+  }
   justify-content: center;
   margin-bottom: 50px;
   &__item {
     @include marginRightNotLastCh(8px);
+    @media screen and (max-width: $breakpointBeeforeTablet) {
+      margin-right: 8px;
+      margin-top: 8px;
+    }
   }
   &__button {
     @include hoverButtons-set();
