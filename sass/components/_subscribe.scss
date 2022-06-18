@@ -29,7 +29,6 @@
     }
   }
   &__form-email-input {
-    margin-bottom: 20px;
     padding: 15px 16px;
     height: 50px;
     background-color: transparent;
@@ -44,13 +43,15 @@
     border-radius: 4px;
     @media screen and (max-width: $breakpointBeeforeTablet) {
       width: 100%;
+      margin-bottom: 20px;
     }
-    @media screen and (min-width: $breakpointTablet) {
+    @media screen and (min-width: $breakpointTablet) and (max-width: $breakpointBeeforeDesktop) {
       width: 450px;
+      margin-bottom: 20px;
     }
-  }
-  @media screen and (min-width: $breakpointDesktop) {
-    width: 358px;
+    @media screen and (min-width: $breakpointDesktop) {
+      width: 358px;
+    }
   }
   &__form-button-icon {
     margin-left: 10px;
@@ -64,17 +65,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px 28px;
     @media screen and (max-width: $breakpointBeeforeTablet) {
-      width: 200px;
       margin-left: auto;
       margin-right: auto;
     }
-    @media screen and (min-width: $breakpointTablet) {
-      padding: 10px 28px;
-    }
+
     @media screen and (min-width: $breakpointDesktop) {
       margin-left: 10px;
-      padding: 10px 28px;
     }
   }
   &__form-email-button:hover &__form-button-icon,

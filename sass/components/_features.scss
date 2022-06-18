@@ -1,9 +1,7 @@
 .features {
-  @media screen and (max-width: $breakpointBeeforeTablet) {
+  @media screen and (max-width: $breakpointBeeforeDesktop) {
     padding-top: 60px;
-  }
-  @media screen and (min-width: $breakpointTablet) {
-    padding-top: 60px;
+    padding-bottom: 60px;
   }
   @media screen and (min-width: $breakpointDesktop) {
     padding-top: 94px;
@@ -26,7 +24,7 @@
       flex-wrap: wrap;
       flex-basis: calc(100% / 2 - 30px);
       margin-top: -30px;
-      margin-right: -30px;
+      margin-left: -30px;
     }
     @media screen and (min-width: $breakpointDesktop) {
       display: flex;
@@ -39,7 +37,7 @@
     @media screen and (min-width: $breakpointTablet) {
       width: 354px;
       margin-top: 30px;
-      margin-right: 30px;
+      margin-left: 30px;
     }
     @media screen and (min-width: $breakpointDesktop) {
       width: 270px;

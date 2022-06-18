@@ -7,8 +7,7 @@
     letter-spacing: 0.03em;
     margin-bottom: 30px;
     font-size: 28px;
-    @media screen and (max-width: $breakpointBeeforeDesktop) {
-    }
+
     @media screen and (min-width: $breakpointBeeforeDesktop) {
       margin-bottom: 50px;
       font-size: 36px;
@@ -22,7 +21,7 @@
       margin-top: -30px;
       margin-left: -30px;
     }
-    @media screen and (min-width: $breakpointTablet) {
+    @media screen and (max-width: $breakpointDesktop) {
       flex-basis: calc(100% / 3 - 60px);
       flex-wrap: wrap;
       margin-top: -30px;
@@ -35,7 +34,7 @@
       margin-top: 30px;
     }
 
-    @media screen and (min-width: $breakpointTablet) {
+    @media screen and (max-width: $breakpointDesktop) {
       margin-left: 30px;
       margin-top: 30px;
     }
