@@ -1,6 +1,6 @@
 .logo {
   color: $primaryBlackColor;
-  margin-right: 88px;
+
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 24px;
@@ -9,9 +9,8 @@
   &--pre-color {
     color: $primaryAccentColor;
   }
-  @media screen and (max-width: $breakpointBeeforeTablet) {
-    margin-left: auto;
-    margin-right: auto;
+  @media screen and (min-width: $breakpointTablet) {
+    margin-right: 88px;
   }
   @media screen and (min-width: $breakpointDesktop) {
     font-size: 26px;

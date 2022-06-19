@@ -39,15 +39,8 @@
   position: relative;
   overflow: hidden;
   &__img {
-    display: block;
-    @media screen and (max-width: $breakpointBeeforeTablet) {
-      width: 100%;
-      height: 294px;
-    }
-    @media screen and (min-width: $breakpointTablet) {
-      width: 100%;
-      height: 294px;
-    }
+    width: 100%;
+    height: 294px;
   }
   &__img-overflow {
     position: absolute;
