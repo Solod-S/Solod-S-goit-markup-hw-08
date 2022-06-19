@@ -1,37 +1,61 @@
 .hero {
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
+
   @media screen and (max-width: $breakpointBeeforeTablet) {
     padding-top: 118px;
     padding-bottom: 118px;
-    margin: 0 auto;
-    text-align: center;
+
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../images/hero-mobile.jpg);
     content: '';
     background-size: cover;
     background-repeat: no-repeat;
+    max-width: 480px;
+    @media screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/hero-mobile@2x.jpg);
+    }
+    @media screen and (min-resolution: 3dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/hero-mobile@3x.jpg);
+    }
   }
   @media screen and (min-width: $breakpointTablet) {
     padding-top: 118px;
     padding-bottom: 118px;
-    margin: 0 auto;
-    text-align: center;
+    max-width: 768px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../images/hero-mobile.jpg);
+      url(../images/hero-tablet.jpg);
     content: '';
     background-size: cover;
     background-repeat: no-repeat;
+    @media screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/hero-tablet@2x.jpg);
+    }
+    @media screen and (min-resolution: 3dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/hero-tablet@3x.jpg);
+    }
   }
   @media screen and (min-width: $breakpointDesktop) {
-    background-size: cover;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../images/hero.jpg);
-
-    content: '';
     padding-top: 200px;
     padding-bottom: 200px;
-    max-width: 1920px;
+    max-width: 1600px;
+    background-size: cover;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero-pc.jpg);
+    content: '';
+    @media screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/hero-pc@2x.jpg);
+    }
+    @media screen and (min-resolution: 3dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/hero-pc@3x.jpg);
+    }
   }
 
   &__title {
