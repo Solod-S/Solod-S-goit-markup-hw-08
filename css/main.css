@@ -1353,6 +1353,13 @@ header {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .avatar__img {
+    width: 100%;
+    max-height: 265px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .avatar__img--base {
     display: none;

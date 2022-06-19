@@ -81,6 +81,10 @@
     @media screen and (min-width: $breakpointTablet) {
       display: block;
     }
+    @media screen and (min-width: $breakpointDesktop) {
+      width: 100%;
+      max-height: 265px;
+    }
   }
   &__img--base {
     @media screen and (max-width: $breakpointBeeforeTablet) {
