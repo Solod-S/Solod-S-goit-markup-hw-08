@@ -6,7 +6,6 @@
 .team {
   background-color: $primaryBgColor;
   @media screen and (min-width: $breakpointTablet) {
-    max-width: 1920px;
     margin: 0 auto;
   }
   &__title {
