@@ -19,12 +19,30 @@ header {
   display: flex;
   align-items: center;
   &__menu-wrapper {
-    display: none;
+    // display: none;
+    transition: transform 250ms linear;
     @media screen and (max-width: $breakpointBeeforeTell) {
-      // padding: 48px 20px;
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      transform: translateX(-100%);
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $primaryWhiteColor;
     }
     @media screen and (max-width: $breakpointBeeforeTablet) {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
       padding: 48px 40px;
+      transform: translateX(-100%);
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $primaryWhiteColor;
     }
     @media screen and (min-width: $breakpointTablet) {
       display: flex;
@@ -179,6 +197,7 @@ header {
     z-index: 1;
     top: 0;
     left: 0;
+    transform: translateX(0%);
     background-color: $primaryWhiteColor;
     width: 100%;
     height: 100%;
