@@ -438,6 +438,7 @@ header {
         -ms-flex-direction: column;
             flex-direction: column;
     position: fixed;
+    z-index: 1;
     -webkit-transform: translateX(-100%);
             transform: translateX(-100%);
     top: 0;
@@ -458,6 +459,7 @@ header {
         -ms-flex-direction: column;
             flex-direction: column;
     position: fixed;
+    z-index: 1;
     padding: 48px 40px;
     -webkit-transform: translateX(-100%);
             transform: translateX(-100%);
