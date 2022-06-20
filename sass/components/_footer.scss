@@ -13,7 +13,14 @@
     // max-width: 1920px;
   }
   &__flex-wrapper {
-    @media screen and (min-width: $breakpointBeeforeTablet) {
+    @media screen and (max-width: $breakpointTablet) {
+      margin-bottom: 60px;
+    }
+    @media screen and (min-width: $breakpointTablet) {
+      display: flex;
+      justify-content: space-around;
+    }
+    @media screen and (min-width: $breakpointTablet) and (max-width: $breakpointBeeforeDesktop) {
       display: flex;
       justify-content: space-around;
       margin-bottom: 60px;
@@ -25,7 +32,6 @@
     }
     @media screen and (min-width: $breakpointDesktop) {
       display: flex;
-      align-items: baseline;
     }
   }
   &__contacts-wrapper {
@@ -37,9 +43,6 @@
     }
   }
   &__social-wrapper {
-    @media screen and (max-width: $breakpointTablet) {
-      margin-bottom: 60px;
-    }
     @media screen and (min-width: $breakpointDesktop) {
       margin-left: 70px;
     }
@@ -53,7 +56,7 @@
     text-transform: uppercase;
 
     color: $primaryWhiteColor;
-    @media screen and (max-width: $breakpointTablet) {
+    @media screen and (max-width: $breakpointBeeforeDesktop) {
       text-align: center;
     }
   }

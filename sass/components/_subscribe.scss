@@ -13,7 +13,7 @@
 
     color: $primaryWhiteColor;
   }
-  @media screen and (min-width: $breakpointTablet) {
+  @media screen and (max-width: $breakpointBeeforeDesktop) {
     text-align: center;
   }
   &__form-wrapper {

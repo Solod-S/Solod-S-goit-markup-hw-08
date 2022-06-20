@@ -439,6 +439,7 @@ header {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    width: 100%;
   }
 }
 
@@ -575,7 +576,6 @@ header {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-left: 82px;
   }
 }
 
@@ -1642,7 +1642,7 @@ header {
   color: #ffffff;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1199px) {
   .subscribe {
     text-align: center;
   }
@@ -1779,7 +1779,23 @@ header {
   }
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (max-width: 768px) {
+  .footer__flex-wrapper {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer__flex-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer__flex-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1795,20 +1811,11 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
   }
 }
 
 @media screen and (max-width: 767px) {
   .footer__contacts-wrapper {
-    margin-bottom: 60px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .footer__social-wrapper {
     margin-bottom: 60px;
   }
 }
@@ -1829,7 +1836,7 @@ header {
   color: #ffffff;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1199px) {
   .footer__social-title {
     text-align: center;
   }
@@ -2356,6 +2363,8 @@ pointer-events: none; */
 @media screen and (max-width: 767px) {
   .card-set__item {
     width: 100%;
+  }
+  .card-set__item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
@@ -2363,6 +2372,14 @@ pointer-events: none; */
 @media screen and (min-width: 768px) {
   .card-set__item {
     width: 354px;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card-set__item {
+    width: 370px;
     margin-left: 30px;
     margin-top: 30px;
   }

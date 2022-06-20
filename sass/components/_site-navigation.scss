@@ -29,6 +29,7 @@ header {
     @media screen and (min-width: $breakpointTablet) {
       display: flex;
       align-items: center;
+      width: 100%;
     }
     @media screen and (min-width: $breakpointDesktop) {
       display: contents;
@@ -101,7 +102,6 @@ header {
     @media screen and (min-width: $breakpointTablet) {
       margin-left: auto;
       flex-direction: column;
-      margin-left: 82px;
     }
     @media screen and (min-width: $breakpointDesktop) {
       margin-left: auto;
