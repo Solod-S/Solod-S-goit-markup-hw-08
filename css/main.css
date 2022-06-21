@@ -730,10 +730,6 @@ header {
   }
 }
 
-.navigation .navigation__menu-wrapper.--is-open header {
-  border: none;
-}
-
 .navigation .navigation__menu-wrapper.--is-open {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -753,14 +749,14 @@ header {
   height: 100%;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .navigation .navigation__menu-wrapper.--is-open {
-    display: block;
+    display: contents;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .navigation .navigation__link--slider::after {
+  .navigation .navigation__menu-wrapper.--is-open .navigation__link--slider::after {
     content: '';
     position: absolute;
     bottom: -21px;
@@ -779,7 +775,7 @@ header {
 }
 
 @media screen and (min-width: 1200px) {
-  .navigation .navigation__link--slider::after {
+  .navigation .navigation__menu-wrapper.--is-open .navigation__link--slider::after {
     content: '';
     position: absolute;
     bottom: -32px;
@@ -795,18 +791,18 @@ header {
     background: #2196f3;
     border-radius: 2px;
   }
-  .navigation .navigation__link--slider:hover::after {
+  .navigation .navigation__menu-wrapper.--is-open .navigation__link--slider:hover::after {
     -webkit-transform: scaleX(1);
             transform: scaleX(1);
   }
 }
 
-.navigation .navigation__link--current-page-status {
+.navigation .navigation__menu-wrapper.--is-open .navigation__link--current-page-status {
   color: #2196f3;
 }
 
 @media screen and (min-width: 768px) {
-  .navigation .navigation__link--current-page-status::after {
+  .navigation .navigation__menu-wrapper.--is-open .navigation__link--current-page-status::after {
     position: absolute;
     bottom: -36px;
     left: 0;
@@ -820,7 +816,7 @@ header {
 }
 
 @media screen and (min-width: 1200px) {
-  .navigation .navigation__link--current-page-status::after {
+  .navigation .navigation__menu-wrapper.--is-open .navigation__link--current-page-status::after {
     position: absolute;
     bottom: -32px;
     left: 0;
@@ -833,7 +829,7 @@ header {
   }
 }
 
-.--overscroll-no {
+.navigation .--overscroll-no {
   overflow: hidden;
 }
 
