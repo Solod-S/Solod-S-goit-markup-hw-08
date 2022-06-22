@@ -10,6 +10,6 @@
     menuBtnRef.setAttribute('aria-expanded', !expanded);
 
     mobileMenuRef.classList.toggle('--is-open');
-    bodyOverscroll.classList.toggle('--overscroll-no');
+    bodyOverscroll.classList.toggle('no-scroll');
   });
 })();
