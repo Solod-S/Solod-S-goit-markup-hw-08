@@ -403,6 +403,7 @@ header {
 }
 
 .navigation__menu-wrapper {
+  overflow-y: auto;
   -webkit-transition: -webkit-transform 250ms linear;
   transition: -webkit-transform 250ms linear;
   transition: transform 250ms linear;

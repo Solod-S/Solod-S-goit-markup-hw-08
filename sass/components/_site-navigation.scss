@@ -19,6 +19,7 @@ header {
   display: flex;
   align-items: center;
   &__menu-wrapper {
+    overflow-y: auto;
     transition: transform 250ms linear;
     @media screen and (max-width: $breakpointBeeforeTell) {
       display: flex;
