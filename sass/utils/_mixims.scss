@@ -9,6 +9,11 @@
     margin-bottom: #{$selector};
   }
 }
+@mixin marginBottomLastCh($selector: 9px) {
+  &:last-child {
+    margin-bottom: #{$selector};
+  }
+}
 // -----------------------------hover/focus/active---------------------------------
 @mixin hoverOutline($color: $primaryAccentColor) {
   &:hover {

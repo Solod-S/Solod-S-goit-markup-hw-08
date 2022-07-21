@@ -117,6 +117,7 @@ header {
     display: flex;
     @media screen and (max-width: $breakpointBeeforeTablet) {
       flex-direction: column;
+      flex-direction: column-reverse;
       margin-bottom: 64px;
     }
     @media screen and (min-width: $breakpointTablet) {
@@ -131,7 +132,7 @@ header {
   }
   &__item-contacts {
     @media screen and (max-width: $breakpointBeeforeTablet) {
-      @include marginBottomNotLastCh(32px);
+      @include marginBottomLastCh(32px);
     }
     @media screen and (min-width: $breakpointTablet) and (max-width: $breakpointBeeforeDesktop) {
       @include marginBottomNotLastCh(10px);
@@ -152,6 +153,7 @@ header {
 
     @media screen and (max-width: $breakpointBeeforeTablet) {
       font-size: 34px;
+      color: $labelColor;
     }
     @media screen and (min-width: $breakpointTablet) {
       font-size: 12px;

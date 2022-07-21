@@ -79,10 +79,11 @@
     flex-direction: column;
     margin-bottom: 10px;
   }
-  &__form-field:hover input,
+
   &__form-field:focus input {
     @include hoverForm();
     @include focusForm();
+    outline: 1px solid blue($color: #000000);
   }
   &__wrapper {
     position: relative;
@@ -92,7 +93,7 @@
     top: 50%;
     left: 0;
     transform: translate(80%, -50%);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms linear;
   }
   &__input-label {
     margin-bottom: 4px;
@@ -112,6 +113,9 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border-radius: 4px;
+    &:focus {
+      outline: 1px solid $primaryAccentColor;
+    }
   }
 
   &__input:focus + &__input-icon,
@@ -126,7 +130,7 @@
   }
 
   &__textarea {
-    @include hoverForm();
+    // @include hoverForm();
     @include focusForm();
     padding: 12px 16px;
     width: 100%;
@@ -145,7 +149,7 @@
 
     color: $labelColor;
   }
-  &__textarea-field placeholder {
+  &__textarea-field ::placeholder {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
