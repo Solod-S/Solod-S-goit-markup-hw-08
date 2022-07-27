@@ -24,6 +24,7 @@
 }
 .modal {
   position: absolute;
+  overflow: auto;
   padding: 40px;
   top: 50%;
   left: 50%;
@@ -44,7 +45,8 @@
   }
   @media screen and (min-width: $breakpointBeeforeTablet) {
     width: 528px;
-    height: 609;
+    height: 609px;
+    overflow: auto;
   }
   @media screen and (max-height: 608px) {
     height: 100vh;
