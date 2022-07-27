@@ -45,7 +45,7 @@
                 >
               </li>
               <li class="navigation__item">
-                <a class="navigation__link navigation__link--slider" href="#footer">Контакты</a>
+                <a class="navigation__link navigation__link--slider" href="#">Контакты</a>
               </li>
             </ul>
           </nav>
@@ -149,13 +149,39 @@
                 class="card-set__link"
               >
                 <div class="graphic-content">
-                  <img
-                    class="graphic-content__img"
-                    srcset="./images/technocrack.jpg 1x, ./images/technocrack-@2x.jpg 2x"
-                    src="./images/technocrack.jpg"
-                    alt="технокряк-сайт"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/technocrack-desktop.jpg    1x,
+                        ./images/technocrack-desktop@2x.jpg 2x,
+                        ./images/technocrack-desktop@3x.jpg 3x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/technocrack-table.jpg    1x,
+                        ./images/technocrack-table@2x.jpg 2x,
+                        ./images/technocrack-table@3x.jpg 3x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/technocrack-mobile.jpg    1x,
+                        ./images/technocrack-mobile@2x.jpg 2x,
+                        ./images/technocrack-mobile@3x.jpg 3x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      class="graphic-content__img"
+                      src="./images/technocrack-mobile@3x.jpg"
+                      alt="технокряк"
+                      width="370"
+                    />
+                  </picture>
+
                   <div class="overflow">
                     <p class="graphic-content__img-overflow">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -178,13 +204,39 @@
                 class="card-set__link"
               >
                 <div class="graphic-content">
-                  <img
-                    class="graphic-content__img"
-                    srcset="./images/new-orlean-vs.jpg 1x, ./images/new-orlean-vs@2x.jpg 2x"
-                    src="./images/new-orlean-vs.jpg"
-                    alt="нба-постер"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/new-orlean-vs-desktop.jpg    1x,
+                        ./images/new-orlean-vs-desktop@2x.jpg 2x,
+                        ./images/new-orlean-vs-desktop@3x.jpg 3x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/new-orlean-vs-table.jpg    1x,
+                        ./images/new-orlean-vs-table@2x.jpg 2x,
+                        ./images/new-orlean-vs-table@3x.jpg 3x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/new-orlean-vs-mobile.jpg    1x,
+                        ./images/new-orlean-vs-mobile@2x.jpg 2x,
+                        ./images/new-orlean-vs-mobile@3x.jpg 3x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      class="graphic-content__img"
+                      src="./images/new-orlean-vs-mobile@3x.jpg"
+                      alt="нба-постер"
+                      width="370"
+                    />
+                  </picture>
+
                   <p class="graphic-content__img-overflow">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -207,13 +259,38 @@
                 class="card-set__link"
               >
                 <div class="graphic-content">
-                  <img
-                    class="graphic-content__img"
-                    srcset="./images/seafood.jpg 1x, ./images/seafood@2x.jpg 2x"
-                    src="./images/seafood.jpg"
-                    alt="seafood-лого"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/seafood-desktop.jpg    1x,
+                        ./images/seafood-desktop@2x.jpg 2x,
+                        ./images/seafood-desktop@3x.jpg 3x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/seafood-table.jpg    1x,
+                        ./images/seafood-table@2x.jpg 2x,
+                        ./images/seafood-table@3x.jpg 3x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/seafood-mobile.jpg    1x,
+                        ./images/seafood-mobile@2x.jpg 2x,
+                        ./images/seafood-mobile@3x.jpg 3x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      class="graphic-content__img"
+                      src="./images/seafood-mobile@3x.jpg"
+                      alt="seafood-лого"
+                      width="370"
+                    />
+                  </picture>
                   <p class="graphic-content__img-overflow">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -234,13 +311,39 @@
                 class="card-set__link"
               >
                 <div class="graphic-content">
-                  <img
-                    class="graphic-content__img"
-                    srcset="./images/prime.jpg 1x, ./images/prime@2x.jpg 2x"
-                    src="./images/prime.jpg"
-                    alt="наушники"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/prime-desktop.jpg    1x,
+                        ./images/prime-desktop@2x.jpg 2x,
+                        ./images/prime-desktop@3x.jpg 3x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/prime-table.jpg    1x,
+                        ./images/prime-table@2x.jpg 2x,
+                        ./images/prime-table@3x.jpg 3x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/prime-mobile.jpg    1x,
+                        ./images/prime-mobile@2x.jpg 2x,
+                        ./images/prime-mobile@3x.jpg 3x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      class="graphic-content__img"
+                      src="./images/prime-mobile@3x.jpg"
+                      alt="наушники"
+                      width="370"
+                    />
+                  </picture>
+
                   <p class="graphic-content__img-overflow">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -261,13 +364,38 @@
                 class="card-set__link"
               >
                 <div class="graphic-content">
-                  <img
-                    class="graphic-content__img"
-                    srcset="./images/boxes.jpg 1x, ./images/boxes@2x.jpg 2x"
-                    src="./images/boxes.jpg"
-                    alt="коробочки"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/boxes-desktop.jpg    1x,
+                        ./images/boxes-desktop@2x.jpg 2x,
+                        ./images/boxes-desktop@3x.jpg 3x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/boxes-table.jpg    1x,
+                        ./images/boxes-table@2x.jpg 2x,
+                        ./images/boxes-table@3x.jpg 3x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/boxes-mobile.jpg    1x,
+                        ./images/boxes-mobile@2x.jpg 2x,
+                        ./images/boxes-mobile@3x.jpg 3x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      class="graphic-content__img"
+                      src="./images/boxes-mobile@3x.jpg"
+                      alt="коробочки"
+                      width="370"
+                    />
+                  </picture>
                   <p class="graphic-content__img-overflow">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -288,16 +416,38 @@
                 class="card-set__link"
               >
                 <div class="graphic-content">
-                  <img
-                    class="graphic-content__img"
-                    srcset="
-                      ./images/inspiration-has-no-borders.jpg    1x,
-                      ./images/inspiration-has-no-borders@2x.jpg 2x
-                    "
-                    src="./images/inspiration-has-no-borders.jpg"
-                    alt="сайт"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/inspiration-has-no-borders-desktop.jpg    1x,
+                        ./images/inspiration-has-no-borders-desktop@2x.jpg 2x,
+                        ./images/inspiration-has-no-borders-desktop@3x.jpg 3x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/inspiration-has-no-borders-table.jpg    1x,
+                        ./images/inspiration-has-no-borders-table@2x.jpg 2x,
+                        ./images/inspiration-has-no-borders-table@3x.jpg 3x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/inspiration-has-no-borders-mobile.jpg    1x,
+                        ./images/inspiration-has-no-borders-mobile@2x.jpg 2x,
+                        ./images/inspiration-has-no-borders-mobile@3x.jpg 3x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      class="graphic-content__img"
+                      src="./images/inspiration-has-no-borders-mobile@3x.jpg"
+                      alt="сайт"
+                      width="370"
+                    />
+                  </picture>
                   <p class="graphic-content__img-overflow">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -318,13 +468,38 @@
                 class="card-set__link"
               >
                 <div class="graphic-content">
-                  <img
-                    class="graphic-content__img"
-                    srcset="./images/limited-edition.jpg 1x, ./images/limited-edition@2x.jpg 2x"
-                    src="./images/limited-edition.jpg"
-                    alt="журнал"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/limited-edition-desktop.jpg    1x,
+                        ./images/limited-edition-desktop@2x.jpg 2x,
+                        ./images/limited-edition-desktop@3x.jpg 3x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/limited-edition-table.jpg    1x,
+                        ./images/limited-edition-table@2x.jpg 2x,
+                        ./images/limited-edition-table@3x.jpg 3x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/limited-edition-mobile.jpg    1x,
+                        ./images/limited-edition-mobile@2x.jpg 2x,
+                        ./images/limited-edition-mobile@3x.jpg 3x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      class="graphic-content__img"
+                      src="./images/limited-edition-mobile@3x.jpg"
+                      alt="журнал"
+                      width="370"
+                    />
+                  </picture>
                   <p class="graphic-content__img-overflow">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -347,13 +522,39 @@
                 class="card-set__link"
               >
                 <div class="graphic-content">
-                  <img
-                    class="graphic-content__img"
-                    srcset="./images/lab.jpg 1x, ./images/lab@2x.jpg 2x"
-                    src="./images/lab.jpg"
-                    alt="лейба"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/lab-desktop.jpg    1x,
+                        ./images/lab-desktop@2x.jpg 2x,
+                        ./images/lab-desktop@3x.jpg 3x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/lab-table.jpg    1x,
+                        ./images/lab-table@2x.jpg 2x,
+                        ./images/lab-table@3x.jpg 3x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/lab-mobile.jpg    1x,
+                        ./images/lab-mobile@2x.jpg 2x,
+                        ./images/lab-mobile@3x.jpg 3x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      class="graphic-content__img"
+                      src="./images/lab-mobile@3x.jpg"
+                      alt="лейба"
+                      width="370"
+                    />
+                  </picture>
+
                   <p class="graphic-content__img-overflow">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -374,13 +575,38 @@
                 class="card-set__link"
               >
                 <div class="graphic-content">
-                  <img
-                    class="graphic-content__img"
-                    srcset="./images/growing-business.jpg 1x, ./images/growing-business@2x.jpg 2x"
-                    src="./images/growing-business.jpg"
-                    alt="лейба"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/growing-business-desktop.jpg    1x,
+                        ./images/growing-business-desktop@2x.jpg 2x,
+                        ./images/growing-business-desktop@3x.jpg 3x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/growing-business-table.jpg    1x,
+                        ./images/growing-business-table@2x.jpg 2x,
+                        ./images/growing-business-table@3x.jpg 3x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/growing-business-mobile.jpg    1x,
+                        ./images/growing-business-mobile@2x.jpg 2x,
+                        ./images/growing-business-mobile@3x.jpg 3x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      class="graphic-content__img"
+                      src="./images/growing-business-mobile@3x.jpg"
+                      alt="лейба"
+                      width="370"
+                    />
+                  </picture>
                   <p class="graphic-content__img-overflow">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании

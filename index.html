@@ -48,7 +48,7 @@
                 >
               </li>
               <li class="navigation__item">
-                <a class="navigation__link navigation__link--slider" href="#footer">Контакты</a>
+                <a class="navigation__link navigation__link--slider" href="#">Контакты</a>
               </li>
             </ul>
           </nav>
@@ -198,33 +198,48 @@
           <h2 class="characteristic__title">Чем мы занимаемся</h2>
           <ul class="characteristic__list">
             <li class="characteristic__item">
-              <img
-                class="characteristic__img"
-                srcset="./images/box_1.jpg 1x, ./images/box_1@2x.jpg 2x"
-                src="./images/box_1.jpg"
-                alt="коддинг"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="./images/box_1.jpg 1x, ./images/box_1@2x.jpg 2x, ./images/box_1@3x.jpg 3x"
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="characteristic__img"
+                  src="./images/box_1@3x.jpg"
+                  alt="коддинг"
+                  width="370"
+                />
+              </picture>
               <p class="characteristic__text">Десктопные приложения</p>
             </li>
             <li class="characteristic__item">
-              <img
-                class="characteristic__img"
-                srcset="./images/box_2.jpg 1x, ./images/box_2@2x.jpg 2x"
-                src="./images/box_2.jpg"
-                alt="мобайл"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="./images/box_2.jpg 1x, ./images/box_2@2x.jpg 2x, ./images/box_2@3x.jpg 3x"
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="characteristic__img"
+                  src="./images/box_2@3x.jpg"
+                  alt="мобайл"
+                  width="370"
+                />
+              </picture>
               <p class="characteristic__text">Мобильные приложения</p>
             </li>
             <li class="characteristic__item">
-              <img
-                class="characteristic__img"
-                srcset="./images/box_3.jpg 1x, ./images/box_3@2x.jpg 2x"
-                src="./images/box_3.jpg"
-                alt="дизайн"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="./images/box_3.jpg 1x, ./images/box_3@2x.jpg 2x, ./images/box_3@3x.jpg 3x"
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="characteristic__img"
+                  src="./images/box_3@3x.jpg"
+                  alt="дизайн"
+                  width="370"
+                />
+              </picture>
               <p class="characteristic__text">Дизайнерские решения</p>
             </li>
           </ul>
@@ -237,20 +252,71 @@
           <ul class="team__member-list">
             <li class="team__member-item">
               <div class="avatar">
-                <img
-                  class="avatar__img"
-                  srcset="./images/igor.jpg 1x, ./images/igor@2x.jpg 2x"
-                  src="./images/igor.jpg"
-                  alt="игорь"
-                  width="270"
-                />
-                <img
-                  class="avatar__img--base"
-                  srcset="./images/igor.jpg 1x, ./images/igor@2x.jpg 2x"
-                  src="./images/igor.jpg"
-                  alt="игорь"
-                  width="270"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/igor-desktop.jpg    1x,
+                      ./images/igor-desktop@2x.jpg 2x,
+                      ./images/igor-desktop@3x.jpg 3x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/igor-table.jpg    1x,
+                      ./images/igor-table@2x.jpg 2x,
+                      ./images/igor-table@3x.jpg 3x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/igor-mobile.jpg    1x,
+                      ./images/igor-mobile@2x.jpg 2x,
+                      ./images/igor-mobile@3x.jpg 3x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    class="avatar__img"
+                    src="./images/igor-mobile@3x.jpg"
+                    alt="Игорь"
+                    width="270"
+                  />
+                </picture>
+
+                <picture>
+                  <source
+                    srcset="
+                      ./images/igor-desktop.jpg    1x,
+                      ./images/igor-desktop@2x.jpg 2x,
+                      ./images/igor-desktop@3x.jpg 3x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/igor-table.jpg    1x,
+                      ./images/igor-table@2x.jpg 2x,
+                      ./images/igor-table@3x.jpg 3x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/igor-mobile.jpg    1x,
+                      ./images/igor-mobile@2x.jpg 2x,
+                      ./images/igor-mobile@3x.jpg 3x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    class="avatar__img--base"
+                    src="./images/igor-mobile@3x.jpg"
+                    alt="Игорь"
+                    width="270"
+                  />
+                </picture>
               </div>
               <div class="dscr">
                 <h3 class="dscr__name">Игорь Демьяненко</h3>
@@ -309,20 +375,71 @@
             </li>
             <li class="team__member-item">
               <div class="avatar">
-                <img
-                  class="avatar__img"
-                  srcset="./images/olga.jpg 1x, ./images/olga@2x.jpg 2x"
-                  src="./images/olga.jpg"
-                  alt="ольга"
-                  width="270"
-                />
-                <img
-                  class="avatar__img--base"
-                  srcset="./images/olga.jpg 1x, ./images/olga@2x.jpg 2x"
-                  src="./images/olga.jpg"
-                  alt="ольга"
-                  width="270"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/olga-desktop.jpg    1x,
+                      ./images/olga-desktop@2x.jpg 2x,
+                      ./images/olga-desktop@3x.jpg 3x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/olga-table.jpg    1x,
+                      ./images/olga-table@2x.jpg 2x,
+                      ./images/olga-table@3x.jpg 3x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/olga-mobile.jpg    1x,
+                      ./images/olga-mobile@2x.jpg 2x,
+                      ./images/olga-mobile@3x.jpg 3x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    class="avatar__img"
+                    src="./images/olga-mobile@3x.jpg"
+                    alt="ольга"
+                    width="270"
+                  />
+                </picture>
+
+                <picture>
+                  <source
+                    srcset="
+                      ./images/olga-desktop.jpg    1x,
+                      ./images/olga-desktop@2x.jpg 2x,
+                      ./images/olga-desktop@3x.jpg 3x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/olga-table.jpg    1x,
+                      ./images/olga-table@2x.jpg 2x,
+                      ./images/olga-table@3x.jpg 3x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/olga-mobile.jpg    1x,
+                      ./images/olga-mobile@2x.jpg 2x,
+                      ./images/olga-mobile@3x.jpg 3x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    class="avatar__img--base"
+                    src="./images/olga-mobile@3x.jpg"
+                    alt="ольга"
+                    width="270"
+                  />
+                </picture>
               </div>
               <div class="dscr">
                 <h3 class="dscr__name">Ольга Репина</h3>
@@ -381,20 +498,71 @@
             </li>
             <li class="team__member-item">
               <div class="avatar">
-                <img
-                  class="avatar__img"
-                  srcset="./images/nikola.jpg 1x, ./images/nikola@2x.jpg 2x"
-                  src="./images/nikola.jpg"
-                  alt="николай"
-                  width="270"
-                />
-                <img
-                  class="avatar__img--base"
-                  srcset="./images/nikola.jpg 1x, ./images/nikola@2x.jpg 2x"
-                  src="./images/nikola.jpg"
-                  alt="николай"
-                  width="270"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/nikola-desktop.jpg    1x,
+                      ./images/nikola-desktop@2x.jpg 2x,
+                      ./images/nikola-desktop@3x.jpg 3x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/nikola-table.jpg    1x,
+                      ./images/nikola-table@2x.jpg 2x,
+                      ./images/nikola-table@3x.jpg 3x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/nikola-mobile.jpg    1x,
+                      ./images/nikola-mobile@2x.jpg 2x,
+                      ./images/nikola-mobile@3x.jpg 3x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    class="avatar__img"
+                    src="./images/nikola-mobile@3x.jpg"
+                    alt="николай"
+                    width="270"
+                  />
+                </picture>
+
+                <picture>
+                  <source
+                    srcset="
+                      ./images/nikola-desktop.jpg    1x,
+                      ./images/nikola-desktop@2x.jpg 2x,
+                      ./images/nikola-desktop@3x.jpg 3x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/nikola-table.jpg    1x,
+                      ./images/nikola-table@2x.jpg 2x,
+                      ./images/nikola-table@3x.jpg 3x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/nikola-mobile.jpg    1x,
+                      ./images/nikola-mobile@2x.jpg 2x,
+                      ./images/nikola-mobile@3x.jpg 3x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    class="avatar__img--base"
+                    src="./images/nikola-mobile@3x.jpg"
+                    alt="николай"
+                    width="270"
+                  />
+                </picture>
               </div>
               <div class="dscr">
                 <h3 class="dscr__name">Николай Тарасов</h3>
@@ -453,20 +621,71 @@
             </li>
             <li class="team__member-item">
               <div class="avatar">
-                <img
-                  class="avatar__img"
-                  srcset="./images/mihail.jpg 1x, ./images/mihail@2x.jpg 2x"
-                  src="./images/mihail.jpg"
-                  alt="михаил"
-                  width="270"
-                />
-                <img
-                  class="avatar__img--base"
-                  srcset="./images/mihail.jpg 1x, ./images/mihail@2x.jpg 2x"
-                  src="./images/mihail.jpg"
-                  alt="михаил"
-                  width="270"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/mihail-desktop.jpg    1x,
+                      ./images/mihail-desktop@2x.jpg 2x,
+                      ./images/mihail-desktop@3x.jpg 3x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/mihail-table.jpg    1x,
+                      ./images/mihail-table@2x.jpg 2x,
+                      ./images/mihail-table@3x.jpg 3x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/mihail-mobile.jpg    1x,
+                      ./images/mihail-mobile@2x.jpg 2x,
+                      ./images/mihail-mobile@3x.jpg 3x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    class="avatar__img"
+                    src="./images/mihail-mobile@3x.jpg"
+                    alt="михаил"
+                    width="270"
+                  />
+                </picture>
+
+                <picture>
+                  <source
+                    srcset="
+                      ./images/mihail-desktop.jpg    1x,
+                      ./images/mihail-desktop@2x.jpg 2x,
+                      ./images/mihail-desktop@3x.jpg 3x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/mihail-table.jpg    1x,
+                      ./images/mihail-table@2x.jpg 2x,
+                      ./images/mihail-table@3x.jpg 3x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/mihail-mobile.jpg    1x,
+                      ./images/mihail-mobile@2x.jpg 2x,
+                      ./images/mihail-mobile@3x.jpg 3x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    class="avatar__img--base"
+                    src="./images/mihail-mobile@3x.jpg"
+                    alt="михаил"
+                    width="270"
+                  />
+                </picture>
               </div>
               <div class="dscr">
                 <h3 class="dscr__name">Михаил Ермаков</h3>
