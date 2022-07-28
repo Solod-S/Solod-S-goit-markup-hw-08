@@ -7,12 +7,13 @@
     <meta name="description" content="Сайт об Web-студии" />
     <title>Студия</title>
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
@@ -200,6 +201,24 @@
             <li class="characteristic__item">
               <picture>
                 <source
+                  srcset="
+                    ./images/box_1.webp    1x,
+                    ./images/box_1@2x.webp 2x,
+                    ./images/box_1@3x.webp 3x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/box_1.webp    1x,
+                    ./images/box_1@2x.webp 2x,
+                    ./images/box_1@3x.webp 3x
+                  "
+                  media="(min-width: 320px)"
+                  type="image/webp"
+                />
+                <source
                   srcset="./images/box_1.jpg 1x, ./images/box_1@2x.jpg 2x, ./images/box_1@3x.jpg 3x"
                   media="(min-width: 1200px)"
                 />
@@ -215,6 +234,24 @@
             <li class="characteristic__item">
               <picture>
                 <source
+                  srcset="
+                    ./images/box_2.webp    1x,
+                    ./images/box_2@2x.webp 2x,
+                    ./images/box_2@3x.webp 3x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/box_2.webp    1x,
+                    ./images/box_2@2x.webp 2x,
+                    ./images/box_2@3x.webp 3x
+                  "
+                  media="(min-width: 320px)"
+                  type="image/webp"
+                />
+                <source
                   srcset="./images/box_2.jpg 1x, ./images/box_2@2x.jpg 2x, ./images/box_2@3x.jpg 3x"
                   media="(min-width: 1200px)"
                 />
@@ -229,6 +266,24 @@
             </li>
             <li class="characteristic__item">
               <picture>
+                <source
+                  srcset="
+                    ./images/box_3.webp    1x,
+                    ./images/box_3@2x.webp 2x,
+                    ./images/box_3@3x.webp 3x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/box_3.webp    1x,
+                    ./images/box_3@2x.webp 2x,
+                    ./images/box_3@3x.webp 3x
+                  "
+                  media="(min-width: 320px)"
+                  type="image/webp"
+                />
                 <source
                   srcset="./images/box_3.jpg 1x, ./images/box_3@2x.jpg 2x, ./images/box_3@3x.jpg 3x"
                   media="(min-width: 1200px)"
@@ -253,6 +308,33 @@
             <li class="team__member-item">
               <div class="avatar">
                 <picture>
+                  <source
+                    srcset="
+                      ./images/igor-desktop.webp    1x,
+                      ./images/igor-desktop@2x.webp 2x,
+                      ./images/igor-desktop@3x.webp 3x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/igor-table.webp    1x,
+                      ./images/igor-table@2x.webp 2x,
+                      ./images/igor-table@3x.webp 3x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/igor-mobile.webp    1x,
+                      ./images/igor-mobile@2x.webp 2x,
+                      ./images/igor-mobile@3x.webp 3x
+                    "
+                    media="(min-width: 320px)"
+                    type="image/webp"
+                  />
                   <source
                     srcset="
                       ./images/igor-desktop.jpg    1x,
@@ -286,6 +368,34 @@
                 </picture>
 
                 <picture>
+                  <source
+                    srcset="
+                      ./images/igor-desktop.webp    1x,
+                      ./images/igor-desktop@2x.webp 2x,
+                      ./images/igor-desktop@3x.webp 3x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/igor-table.webp    1x,
+                      ./images/igor-table@2x.webp 2x,
+                      ./images/igor-table@3x.webp 3x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/igor-mobile.webp    1x,
+                      ./images/igor-mobile@2x.webp 2x,
+                      ./images/igor-mobile@3x.webp 3x
+                    "
+                    media="(min-width: 320px)"
+                    type="image/webp"
+                  />
+
                   <source
                     srcset="
                       ./images/igor-desktop.jpg    1x,
@@ -378,11 +488,39 @@
                 <picture>
                   <source
                     srcset="
-                      ./images/olga-desktop.jpg    1x,
-                      ./images/olga-desktop@2x.jpg 2x,
-                      ./images/olga-desktop@3x.jpg 3x
+                      ./images/olga-desktop.webp    1x,
+                      ./images/olga-desktop@2x.webp 2x,
+                      ./images/olga-desktop@3x.webp 3x
                     "
                     media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/olga-table.webp    1x,
+                      ./images/olga-table@2x.webp 2x,
+                      ./images/olga-table@3x.webp 3x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/olga-mobile.webp    1x,
+                      ./images/olga-mobile@2x.webp 2x,
+                      ./images/olga-mobile@3x.webp 3x
+                    "
+                    media="(min-width: 320px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/olga-desktop.webp    1x,
+                      ./images/olga-desktop@2x.webp 2x,
+                      ./images/olga-desktop@3x.webp 3x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
                   />
                   <source
                     srcset="
@@ -409,6 +547,34 @@
                 </picture>
 
                 <picture>
+                  <source
+                    srcset="
+                      ./images/olga-desktop.webp    1x,
+                      ./images/olga-desktop@2x.webp 2x,
+                      ./images/olga-desktop@3x.webp 3x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/olga-table.webp    1x,
+                      ./images/olga-table@2x.webp 2x,
+                      ./images/olga-table@3x.webp 3x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/olga-mobile.webp    1x,
+                      ./images/olga-mobile@2x.webp 2x,
+                      ./images/olga-mobile@3x.webp 3x
+                    "
+                    media="(min-width: 320px)"
+                    type="image/webp"
+                  />
+
                   <source
                     srcset="
                       ./images/olga-desktop.jpg    1x,
@@ -501,6 +667,34 @@
                 <picture>
                   <source
                     srcset="
+                      ./images/nikola-desktop.webp    1x,
+                      ./images/nikola-desktop@2x.webp 2x,
+                      ./images/nikola-desktop@3x.webp 3x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/nikola-table.webp    1x,
+                      ./images/nikola-table@2x.webp 2x,
+                      ./images/nikola-table@3x.webp 3x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/nikola-mobile.webp    1x,
+                      ./images/nikola-mobile@2x.webp 2x,
+                      ./images/nikola-mobile@3x.webp 3x
+                    "
+                    media="(min-width: 320px)"
+                    type="image/webp"
+                  />
+
+                  <source
+                    srcset="
                       ./images/nikola-desktop.jpg    1x,
                       ./images/nikola-desktop@2x.jpg 2x,
                       ./images/nikola-desktop@3x.jpg 3x
@@ -532,6 +726,34 @@
                 </picture>
 
                 <picture>
+                  <source
+                    srcset="
+                      ./images/nikola-desktop.webp    1x,
+                      ./images/nikola-desktop@2x.webp 2x,
+                      ./images/nikola-desktop@3x.webp 3x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/nikola-table.webp    1x,
+                      ./images/nikola-table@2x.webp 2x,
+                      ./images/nikola-table@3x.webp 3x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/nikola-mobile.webp    1x,
+                      ./images/nikola-mobile@2x.webp 2x,
+                      ./images/nikola-mobile@3x.webp 3x
+                    "
+                    media="(min-width: 320px)"
+                    type="image/webp"
+                  />
+
                   <source
                     srcset="
                       ./images/nikola-desktop.jpg    1x,
@@ -624,6 +846,34 @@
                 <picture>
                   <source
                     srcset="
+                      ./images/mihail-desktop.webp    1x,
+                      ./images/mihail-desktop@2x.webp 2x,
+                      ./images/mihail-desktop@3x.webp 3x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/mihail-table.webp    1x,
+                      ./images/mihail-table@2x.webp 2x,
+                      ./images/mihail-table@3x.webp 3x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/mihail-mobile.webp    1x,
+                      ./images/mihail-mobile@2x.webp 2x,
+                      ./images/mihail-mobile@3x.webp 3x
+                    "
+                    media="(min-width: 320px)"
+                    type="image/webp"
+                  />
+
+                  <source
+                    srcset="
                       ./images/mihail-desktop.jpg    1x,
                       ./images/mihail-desktop@2x.jpg 2x,
                       ./images/mihail-desktop@3x.jpg 3x
@@ -655,6 +905,34 @@
                 </picture>
 
                 <picture>
+                  <source
+                    srcset="
+                      ./images/mihail-desktop.webp    1x,
+                      ./images/mihail-desktop@2x.webp 2x,
+                      ./images/mihail-desktop@3x.webp 3x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/mihail-table.webp    1x,
+                      ./images/mihail-table@2x.webp 2x,
+                      ./images/mihail-table@3x.webp 3x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/mihail-mobile.webp    1x,
+                      ./images/mihail-mobile@2x.webp 2x,
+                      ./images/mihail-mobile@3x.webp 3x
+                    "
+                    media="(min-width: 320px)"
+                    type="image/webp"
+                  />
+
                   <source
                     srcset="
                       ./images/mihail-desktop.jpg    1x,
