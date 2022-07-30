@@ -60,6 +60,7 @@
 
   &__title {
     margin-bottom: 30px;
+    font-size: 22px;
     font-style: normal;
     font-weight: 900;
     text-align: center;
@@ -67,10 +68,10 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: $primaryWhiteColor;
-    @media screen and (max-width: $breakpointBeeforeTablet) {
+    @media screen and (min-width: $breakpointBeeforeTell) {
       font-size: 25px;
     }
-    @media screen and (max-width: $breakpointTablet) {
+    @media screen and (min-width: $breakpointTablet) {
       font-size: 26px;
     }
     @media screen and (min-width: $breakpointDesktop) {

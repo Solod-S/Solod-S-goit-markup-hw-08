@@ -15,6 +15,7 @@
   }
   &__list {
     display: flex;
+    justify-content: center;
     @media screen and (max-width: $breakpointBeeforeTablet) {
       flex-wrap: wrap;
       flex-basis: calc(100% / 2 - 30px);
@@ -43,7 +44,7 @@
     }
   }
   &__link {
-    width: 150px;
+    width: 130px;
     height: 92px;
     position: relative;
     display: flex;
@@ -73,7 +74,7 @@
   &__link:focus {
     transform: translatex(-100%) rotateY(180deg);
     fill: $primaryAccentColor;
-    width: 150px;
+    width: 130px;
     height: 92px;
     border: 1px solid $primaryAccentColor;
     border-radius: 4px;

@@ -727,6 +727,7 @@ header {
   background-color: #ffffff;
   width: 100%;
   height: 100%;
+  padding: 25px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1015,6 +1016,7 @@ header {
 
 .hero__title {
   margin-bottom: 30px;
+  font-size: 22px;
   font-style: normal;
   font-weight: 900;
   text-align: center;
@@ -1024,13 +1026,13 @@ header {
   color: #ffffff;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 479px) {
   .hero__title {
     font-size: 25px;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .hero__title {
     font-size: 26px;
   }
@@ -1529,6 +1531,9 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media screen and (max-width: 767px) {
@@ -1574,7 +1579,7 @@ header {
 }
 
 .clients__link {
-  width: 150px;
+  width: 130px;
   height: 92px;
   position: relative;
   display: -webkit-box;
@@ -1624,7 +1629,7 @@ header {
   -webkit-transform: translatex(-100%) rotateY(180deg);
           transform: translatex(-100%) rotateY(180deg);
   fill: #2196f3;
-  width: 150px;
+  width: 130px;
   height: 92px;
   border: 1px solid #2196f3;
   border-radius: 4px;
@@ -2016,7 +2021,7 @@ header {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  overflow: scroll;
+  overflow: unset;
 }
 
 @media screen and (max-width: 479px) {
@@ -2037,13 +2042,13 @@ header {
   .modal {
     width: 528px;
     height: 609px;
-    overflow: auto;
   }
 }
 
 @media screen and (max-height: 608px) {
   .modal {
     height: 100vh;
+    overflow: auto;
   }
 }
 
