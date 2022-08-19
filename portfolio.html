@@ -125,19 +125,25 @@
           <h1 class="--visually-hidden">Портфолио</h1>
           <ul class="buttons-set">
             <li class="buttons-set__item">
-              <button class="buttons-set__button" type="button">Все</button>
+              <button class="buttons-set__button" type="button" data-filter="all">Все</button>
             </li>
             <li class="buttons-set__item">
-              <button class="buttons-set__button" type="button">Веб-сайты</button>
+              <button class="buttons-set__button" type="button" data-filter="web-site">
+                Веб-сайты
+              </button>
             </li>
             <li class="buttons-set__item">
-              <button class="buttons-set__button" type="button">Приложения</button>
+              <button class="buttons-set__button" type="button" data-filter="app">
+                Приложения
+              </button>
             </li>
             <li class="buttons-set__item">
-              <button class="buttons-set__button" type="button">Дизайн</button>
+              <button class="buttons-set__button" type="button" data-filter="design">Дизайн</button>
             </li>
             <li class="buttons-set__item">
-              <button class="buttons-set__button" type="button">Маркетинг</button>
+              <button class="buttons-set__button" type="button" data-filter="marketing">
+                Маркетинг
+              </button>
             </li>
           </ul>
           <ul class="card-set">
@@ -719,6 +725,7 @@
         </div>
       </div>
     </footer>
-    <script src="./javascript/menu.js"></script>
+    <script src="./javascript/menu.js" type="module"></script>
+    <script src="./javascript/portfolio.js" type="module"></script>
   </body>
 </html>
