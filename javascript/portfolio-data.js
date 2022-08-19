@@ -15,7 +15,7 @@ export default [
       './images/technocrack-mobile.jpg 1x, ./images/technocrack-mobile@2x.jpg 2x, ./images/technocrack-mobile@3x.jpg 3x',
   },
   {
-    name: 'New Orlean vs Golden Star',
+    name: 'Постер <span lang="en">New Orlean vs Golden Star</span>',
     description:
       'Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения компании или частном лице.',
     category: 'Дизайн',
