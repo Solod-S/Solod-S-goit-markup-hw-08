@@ -726,6 +726,41 @@
       </div>
     </footer>
     <script src="./javascript/menu.js" type="module"></script>
+    <script id="entry-template" type="text/x-handlebars-template">
+      {{#each this}}
+        <li class='card-set__item' data-filter='{{filter}}'>
+          <a
+            href='https://google.com/'
+            target='_blank'
+            rel='noopener noreferrer nofollow'
+            class='card-set__link'
+          >
+            <div class='graphic-content'>
+              <picture>
+                <source srcset='{{imgDesctop}}' media='(min-width: 1200px)' />
+                <source srcset='{{imgTable}}' media='(min-width: 768px)' />
+                <source srcset='{{imgMobile}}' media='(min-width: 320px)' />
+                <img class='graphic-content__img' src='{{generalImg}}' alt='{{alt}}' width='370' />
+              </picture>
+              <div class='overflow'>
+                <p class='graphic-content__img-overflow'>{{description}}
+                </p>
+              </div>
+            </div>
+            <div class='text-content'>
+              <h2 class='text-content__title'>{{name}}</h2>
+              <p class='text-content__text'>{{category}}</p>
+            </div>
+          </a>
+        </li>
+      {{/each}}
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"
+      integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="./javascript/portfolio.js" type="module"></script>
   </body>
 </html>

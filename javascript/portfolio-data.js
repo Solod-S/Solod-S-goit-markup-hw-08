@@ -15,7 +15,7 @@ export default [
       './images/technocrack-mobile.jpg 1x, ./images/technocrack-mobile@2x.jpg 2x, ./images/technocrack-mobile@3x.jpg 3x',
   },
   {
-    name: 'Постер <span lang="en">New Orlean vs Golden Star</span>',
+    name: 'Постер New Orlean vs Golden Star',
     description:
       'Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения компании или частном лице.',
     category: 'Дизайн',
@@ -30,7 +30,7 @@ export default [
       './images/new-orlean-vs-mobile.jpg 1x, ./images/new-orlean-vs-mobile@2x.jpg 2x, ./images/new-orlean-vs-mobile@3x.jpg 3x',
   },
   {
-    name: 'Ресторан <span lang="en">Seafood</span>',
+    name: 'Ресторан Seafood',
     description:
       'Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения компании или частном лице.',
     category: 'Приложение',
@@ -45,7 +45,7 @@ export default [
       './images/seafood-mobile.jpg 1x, ./images/seafood-mobile@2x.jpg 2x, ./images/seafood-mobile@3x.jpg 3x',
   },
   {
-    name: 'Проект <span lang="en">Prime</span>',
+    name: 'Проект Prime',
     description:
       'Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения компании или частном лице.',
     category: 'Маркетинг',
@@ -60,7 +60,7 @@ export default [
       './images/prime-mobile.jpg 1x, ./images/prime-mobile@2x.jpg 2x, ./images/prime-mobile@3x.jpg 3x',
   },
   {
-    name: ' Проект <span lang="en">Boxes</span>',
+    name: ' Проект Boxes',
     description:
       'Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения компании или частном лице.',
     category: 'Приложение',
@@ -75,7 +75,7 @@ export default [
       './images/boxes-mobile.jpg 1x, ./images/boxes-mobile@2x.jpg 2x, ./images/boxes-mobile@3x.jpg 3x',
   },
   {
-    name: '<span lang="en">Inspiration has no Borders</span>',
+    name: 'Inspiration has no Borders',
     description:
       'Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения компании или частном лице.',
     category: 'Веб-сайт',
@@ -90,7 +90,7 @@ export default [
       './images/inspiration-has-no-borders-mobile.jpg 1x, ./images/inspiration-has-no-borders-mobile@2x.jpg 2x, ./images/inspiration-has-no-borders-mobile@3x.jpg 3x',
   },
   {
-    name: 'Издание <span lang="en">Limited Edition</span>',
+    name: 'Издание Limited Edition',
     description:
       'Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения компании или частном лице.',
     category: 'Дизайн',
@@ -105,7 +105,7 @@ export default [
       './images/limited-edition-mobile.jpg 1x, ./images/limited-edition-mobile@2x.jpg 2x, ./images/limited-edition-mobile@3x.jpg 3x',
   },
   {
-    name: 'Проект <span lang="en">LAB</span>',
+    name: 'Проект LAB',
     description:
       'Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения компании или частном лице.',
     category: 'Маркетинг',
@@ -120,7 +120,7 @@ export default [
       './images/lab-mobile.jpg 1x, ./images/lab-mobile@2x.jpg 2x, ./images/lab-mobile@3x.jpg 3x',
   },
   {
-    name: '<span lang="en">Growing Business</span>',
+    name: 'Growing Business',
     description:
       'Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения компании или частном лице.',
     category: 'Приложение',
