@@ -3,19 +3,24 @@ console.log(products);
 const source = document.getElementById('entry-template').innerHTML;
 const template = Handlebars.compile(source);
 
+const STORAGE_KEY = 'selectedFilter';
+
 const refs = {
   btnPanel: document.querySelector('.buttons-set'),
   portfolio: document.querySelector('.card-set'),
+  filterData: JSON.parse(localStorage.getItem(STORAGE_KEY)),
   filterChose(event) {
     if (event.target.nodeName !== 'BUTTON') {
       return;
     }
-    console.log(event.target.dataset.filter);
     const selectedFilter = event.target.dataset.filter;
     refs.createMarkUp(selectedFilter);
+    console.log(selectedFilter);
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(selectedFilter));
   },
   createMarkUp(selectedFilter) {
     const filteredArrays = products.filter(product => product.filter.includes(selectedFilter));
+    console.log(filteredArrays);
     console.log(template(filteredArrays));
     const cardsEl = template(filteredArrays);
 
@@ -87,4 +92,20 @@ const refs = {
   // },
 };
 
+if (refs.filterData) {
+  // если в refs.filterData есть значения
+  refs.createMarkUp(refs.filterData);
+  // передаем его в разметку
+  const allBtns = document.querySelectorAll('.buttons-set__button');
+  // делаем переменную со всеми кнопками в панели
+  for (const Btn of allBtns) {
+    // перебираем все кнопки
+    if (Btn.dataset.filter === refs.filterData) {
+      // data-filter=".." кнопки ==== записи в refs.filterData
+      Btn.focus();
+      //делаем фокус на кнопку
+      // в css убрал на focus outline: none;
+    }
+  }
+}
 refs.btnPanel.addEventListener('click', refs.filterChose);
