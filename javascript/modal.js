@@ -42,6 +42,24 @@ const refs = {
   onSubmit(event) {
     event.preventDefault();
     //При отправке формы страница не делает перезагрузку.
+    if (
+      event.currentTarget.elements.mail.value === '' ||
+      //если поле с почтой пустое или
+      event.currentTarget.elements.name.value === '' ||
+      //если поле с паролем пустое
+      !event.currentTarget.elements.policy.checked === true ||
+      //если на чекбоксе не стоит галочка
+      event.currentTarget.elements.feedback.value === '' ||
+      //если поле с коментарием пустое
+      event.currentTarget.elements.pnone.value === ''
+      //если поле телефоном пустое
+    ) {
+      Notiflix.Notify.failure('Внимание! Все поля должны быть заполнены.');
+      return;
+      // выводим строку о проблеме
+      // не вЫполняем код ниже
+    }
+
     const formData = new FormData(event.currentTarget);
     // собирает всю дату из полей и под капотом делает огромный итератор который жанглирует этими данными (интерфейс для данных которе там лежат)
     const saveData = {};
@@ -54,21 +72,7 @@ const refs = {
       refs.body.classList.toggle('no-scroll');
       // возвращаем скрол
     });
-    if (
-      event.currentTarget.elements.mail.value === '' ||
-      //если поле с почтой пустое или
-      event.currentTarget.elements.name.value === '' ||
-      //если поле с паролем пустое
-      !event.currentTarget.elements.policy.checked ||
-      //если на чекбоксе не стоит галочка
-      event.currentTarget.elements.feedback.value === '' ||
-      //если поле с коментарием пустое
-      event.currentTarget.elements.pnone.value === ''
-      //если поле телефоном пустое
-    ) {
-      return Notiflix.Notify.failure('Внимание! Все поля должны быть заполнены.');
-      // выводим строку о проблеме
-    }
+
     Notiflix.Notify.info('Мы собрали данные, скоро с Вами свяжиться наш менеджер');
     console.log('Мы собрали данные ==>', saveData);
     // выводим собранные данные
