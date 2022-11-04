@@ -41,13 +41,7 @@ const modalWindow = {
     const { mail, name, policy, feedback, pnone } = event.currentTarget.elements;
     const { modal, body } = this;
     event.preventDefault();
-    if (
-      mail.value === '' ||
-      name.value === '' ||
-      !policy.checked === true ||
-      feedback.value === '' ||
-      pnone.value === ''
-    ) {
+    if (!mail.value || !name.value || !policy.checked || !feedback.value || !pnone.value) {
       Notiflix.Notify.failure('Внимание! Все поля должны быть заполнены.');
       return;
     }
