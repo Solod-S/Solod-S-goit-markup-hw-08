@@ -5,5 +5,5 @@ const { populateFromLocalStorage, createMarkUp, filterChose } = operation;
 
 const { portfolio } = refs;
 
-portfolio.btnPanelEl.addEventListener('click', filterChose.bind(portfolio));
+portfolio.btnsSet.addEventListener('click', filterChose.bind(portfolio));
 populateFromLocalStorage();

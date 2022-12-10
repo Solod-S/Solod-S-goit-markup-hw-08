@@ -4,8 +4,8 @@ const template = Handlebars.compile(source);
 const STORAGE_KEY = 'selectedFilter';
 
 const filtersOnPortfolio = {
-  btnPanelEl: document.querySelector('.buttons-set'),
-  portfolioEl: document.querySelector('.card-set'),
+  btnsSet: document.querySelector('.buttons-set'),
+  cardsSet: document.querySelector('.card-set'),
   filterData: JSON.parse(localStorage.getItem(STORAGE_KEY)),
 
   populateFromLocalStorage() {
@@ -34,15 +34,15 @@ const filtersOnPortfolio = {
   },
 
   createMarkUp(selectedFilter) {
-    const { portfolioEl } = this;
+    const { cardsSet } = this;
     const filteredArrays = products.filter(product => product.filter.includes(selectedFilter));
     const cardsEl = template(filteredArrays);
-    portfolioEl.innerHTML = '';
-    portfolioEl.insertAdjacentHTML('beforeend', cardsEl);
+    cardsSet.innerHTML = '';
+    cardsSet.insertAdjacentHTML('beforeend', cardsEl);
   },
 };
 
-filtersOnPortfolio.btnPanelEl.addEventListener(
+filtersOnPortfolio.btnsSet.addEventListener(
   'click',
   filtersOnPortfolio.filterChose.bind(filtersOnPortfolio)
 );
