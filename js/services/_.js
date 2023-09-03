@@ -54,7 +54,7 @@ const refs = {
       event.currentTarget.elements.pnone.value === ''
       //если поле телефоном пустое
     ) {
-      Notiflix.Notify.failure('Внимание! Все поля должны быть заполнены.');
+      Notiflix.Notify.failure('Attention! All fields must be filled.');
       return;
       // выводим строку о проблеме
       // не вЫполняем код ниже
@@ -73,8 +73,8 @@ const refs = {
       // возвращаем скрол
     });
 
-    Notiflix.Notify.info('Мы собрали данные, скоро с Вами свяжиться наш менеджер');
-    console.log('Мы собрали данные ==>', saveData);
+    Notiflix.Notify.info('We have collected data, our manager will contact you soon');
+    console.log('We have collected data ==>', saveData);
     // выводим собранные данные
     event.currentTarget.reset();
     //делаем сброс

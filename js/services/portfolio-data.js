@@ -1,12 +1,12 @@
 export default [
   {
-    name: 'Технокряк',
+    name: 'Technoquack',
     description:
-      'Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения компании или частном лице.',
-    category: 'Веб-сайт',
+      'The resource offers comprehensive offers with different levels of functionality and services. All this will allow the visitor to obtain comprehensive information about the company or individual.',
+    category: 'Web-site',
     filter: ['web-site', 'all'],
     generalImg: './images/technocrack-mobile@3x.jpg',
-    alt: 'технокряк',
+    alt: 'Technoquack',
     imgDesctop:
       './images/technocrack-desktop.jpg 1x, ./images/technocrack-desktop@2x.jpg 2x, ./images/technocrack-desktop@3x.jpg 3x ',
     imgTable:
@@ -15,13 +15,13 @@ export default [
       './images/technocrack-mobile.jpg 1x, ./images/technocrack-mobile@2x.jpg 2x, ./images/technocrack-mobile@3x.jpg 3x',
   },
   {
-    name: 'Постер New Orlean vs Golden Star',
+    name: 'Poster New Orlean vs Golden Star',
     description:
-      'Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения компании или частном лице.',
-    category: 'Дизайн',
+      'The resource offers comprehensive offers with different levels of functionality and services. All this will allow the visitor to obtain comprehensive information about the company or individual.',
+    category: 'Design',
     filter: ['design', 'all'],
     generalImg: './images/new-orlean-vs-mobile@3x.jpg',
-    alt: 'нба-постер',
+    alt: 'NBA-Poster',
     imgDesctop:
       './images/new-orlean-vs-desktop.jpg 1x, ./images/new-orlean-vs-desktop@2x.jpg 2x, ./images/new-orlean-vs-desktop@3x.jpg 3x',
     imgTable:
@@ -30,13 +30,13 @@ export default [
       './images/new-orlean-vs-mobile.jpg 1x, ./images/new-orlean-vs-mobile@2x.jpg 2x, ./images/new-orlean-vs-mobile@3x.jpg 3x',
   },
   {
-    name: 'Ресторан Seafood',
+    name: 'Restaurant Seafood',
     description:
-      'Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения компании или частном лице.',
-    category: 'Приложение',
+      'The resource offers comprehensive offers with different levels of functionality and services. All this will allow the visitor to obtain comprehensive information about the company or individual.',
+    category: 'App',
     filter: ['app', 'all'],
     generalImg: './images/seafood-mobile@3x.jpg',
-    alt: 'seafood-лого',
+    alt: 'seafood-logo',
     imgDesctop:
       './images/seafood-desktop.jpg 1x, ./images/seafood-desktop@2x.jpg 2x, ./images/seafood-desktop@3x.jpg 3x',
     imgTable:
@@ -45,13 +45,13 @@ export default [
       './images/seafood-mobile.jpg 1x, ./images/seafood-mobile@2x.jpg 2x, ./images/seafood-mobile@3x.jpg 3x',
   },
   {
-    name: 'Проект Prime',
+    name: 'Prime Project',
     description:
-      'Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения компании или частном лице.',
-    category: 'Маркетинг',
+      'The resource offers comprehensive offers with different levels of functionality and services. All this will allow the visitor to obtain comprehensive information about the company or individual.',
+    category: 'Marketing',
     filter: ['marketing', 'all'],
     generalImg: './images/prime-mobile@3x.jpg',
-    alt: 'наушники',
+    alt: 'headphones',
     imgDesctop:
       './images/prime-desktop.jpg 1x, ./images/prime-desktop@2x.jpg 2x, ./images/prime-desktop@3x.jpg 3x',
     imgTable:
@@ -60,13 +60,13 @@ export default [
       './images/prime-mobile.jpg 1x, ./images/prime-mobile@2x.jpg 2x, ./images/prime-mobile@3x.jpg 3x',
   },
   {
-    name: ' Проект Boxes',
+    name: 'Boxes Project',
     description:
-      'Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения компании или частном лице.',
-    category: 'Приложение',
+      'The resource offers comprehensive offers with different levels of functionality and services. All this will allow the visitor to obtain comprehensive information about the company or individual.',
+    category: 'App',
     filter: ['app', 'all'],
     generalImg: './images/boxes-mobile@3x.jpg',
-    alt: 'коробочки',
+    alt: 'boxes',
     imgDesctop:
       './images/boxes-desktop.jpg 1x, ./images/boxes-desktop@2x.jpg 2x, ./images/boxes-desktop@3x.jpg 3x',
     imgTable:
@@ -77,11 +77,11 @@ export default [
   {
     name: 'Inspiration has no Borders',
     description:
-      'Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения компании или частном лице.',
-    category: 'Веб-сайт',
+      'The resource offers comprehensive offers with different levels of functionality and services. All this will allow the visitor to obtain comprehensive information about the company or individual.',
+    category: 'Web-site',
     filter: ['web-site', 'all'],
     generalImg: './images/inspiration-has-no-borders-mobile@3x.jpg',
-    alt: 'сайт',
+    alt: 'site',
     imgDesctop:
       './images/inspiration-has-no-borders-desktop.jpg 1x, ./images/inspiration-has-no-borders-desktop@2x.jpg 2x, ./images/inspiration-has-no-borders-desktop@3x.jpg 3x',
     imgTable:
@@ -90,13 +90,13 @@ export default [
       './images/inspiration-has-no-borders-mobile.jpg 1x, ./images/inspiration-has-no-borders-mobile@2x.jpg 2x, ./images/inspiration-has-no-borders-mobile@3x.jpg 3x',
   },
   {
-    name: 'Издание Limited Edition',
+    name: 'Limited Edition Magazine',
     description:
-      'Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения компании или частном лице.',
-    category: 'Дизайн',
+      'The resource offers comprehensive offers with different levels of functionality and services. All this will allow the visitor to obtain comprehensive information about the company or individual.',
+    category: 'Design',
     filter: ['design', 'all'],
     generalImg: './images/limited-edition-mobile@3x.jpg',
-    alt: 'журнал',
+    alt: 'magazine',
     imgDesctop:
       './images/limited-edition-desktop.jpg 1x, ./images/limited-edition-desktop@2x.jpg 2x, ./images/limited-edition-desktop@3x.jpg 3x',
     imgTable:
@@ -105,13 +105,13 @@ export default [
       './images/limited-edition-mobile.jpg 1x, ./images/limited-edition-mobile@2x.jpg 2x, ./images/limited-edition-mobile@3x.jpg 3x',
   },
   {
-    name: 'Проект LAB',
+    name: 'Project LAB',
     description:
-      'Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения компании или частном лице.',
-    category: 'Маркетинг',
+      'The resource offers comprehensive offers with different levels of functionality and services. All this will allow the visitor to obtain comprehensive information about the company or individual.',
+    category: 'Marketing',
     filter: ['marketing', 'all'],
     generalImg: './images/lab-mobile@3x.jpg',
-    alt: 'лейба',
+    alt: 'labe',
     imgDesctop:
       './images/lab-desktop.jpg  1x, ./images/lab-desktop@2x.jpg 2x, ./images/lab-desktop@3x.jpg 3x',
     imgTable:
@@ -122,11 +122,11 @@ export default [
   {
     name: 'Growing Business',
     description:
-      'Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения компании или частном лице.',
-    category: 'Приложение',
+      'The resource offers comprehensive offers with different levels of functionality and services. All this will allow the visitor to obtain comprehensive information about the company or individual.',
+    category: 'App',
     filter: ['app', 'all'],
     generalImg: './images/growing-business-mobile@3x.jpg',
-    alt: 'лейба',
+    alt: 'labe',
     imgDesctop:
       './images/growing-business-desktop.jpg 1x, ./images/growing-business-desktop@2x.jpg 2x, ./images/growing-business-desktop@3x.jpg 3x',
     imgTable:

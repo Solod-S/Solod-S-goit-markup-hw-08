@@ -10,7 +10,7 @@ const onSubmit = event => {
   const { modal, body } = modalWindow;
   event.preventDefault();
   if (!mail.value || !name.value || !policy.checked || !feedback.value || !pnone.value) {
-    Notiflix.Notify.failure('Внимание! Все поля должны быть заполнены.');
+    Notiflix.Notify.failure('Attention! All fields must be filled.');
     return;
   }
   const capturedData = new FormData(event.currentTarget);
@@ -21,8 +21,8 @@ const onSubmit = event => {
     body.classList.toggle('no-scroll');
   });
 
-  Notiflix.Notify.info('Мы собрали данные, скоро с Вами свяжиться наш менеджер');
-  console.log('Мы собрали данные ==>', saveData);
+  Notiflix.Notify.info('We have collected data, our manager will contact you soon');
+  console.log('We have collected data ==>', saveData);
   event.currentTarget.reset();
   localStorage.removeItem(STORAGE_KEY);
 };
